@@ -16,12 +16,12 @@ Cantera网站为　`<https://cantera.org/>`_　，其中有详细介绍。
 
 * 首先克隆FENGSim。 ::
   
-    git clone https://github.com/OpenDigitalTwin-Dev/FENGSim.git
+    git clone https://github.com/FENGSim/FENGSim.git
   
 * 再将DAE克隆到 ``FENGSim/toolkit`` 路径下。 ::
   
     cd FENGSim/toolkit
-    git clone https://github.com/OpenDigitalTwin-Dev/DAE.git
+    git clone https://github.com/FENGSim/DAE.git
   
 * 在 ``FENGSim/toolkit/DAE/cantera`` 中有一个install脚本，直接运行该脚本可以在Ubuntu24.04下编译安装Cantera，无需其他操作。 ::
   

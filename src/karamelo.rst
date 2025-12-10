@@ -24,12 +24,12 @@ Karamelo的程序文档为 `<https://adevaucorbeil.github.io/karamelo/html/index
 
 * 首先克隆FENGSim。 ::
   
-    git clone https://github.com/OpenDigitalTwin-Dev/FENGSim.git
+    git clone https://github.com/FENGSim/FENGSim.git
   
 * 再将MultiX克隆到 ``FENGSim/toolkit`` 路径下。 ::
   
     cd FENGSim/toolkit
-    git clone https://github.com/OpenDigitalTwin-Dev/MultiX.git
+    git clone https://github.com/FENGSim/MultiX.git
   
 * 在 ``FENGSim/toolkit/MultiX/extern/Karamelo`` 中有一个install脚本，直接运行该脚本可以在Ubuntu24.04下编译Karamelo，无需其他操作。 ::
   

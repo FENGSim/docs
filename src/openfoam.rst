@@ -20,12 +20,12 @@ User Guide是使用说明。在User Guide中，在第2节中介绍了3个例子�
 
 * 首先克隆FENGSim。 ::
   
-    git clone https://github.com/OpenDigitalTwin-Dev/FENGSim.git
+    git clone https://github.com/FENGSim/FENGSim.git
   
 * 再将CFD克隆到 ``FENGSim/toolkit`` 路径下。 ::
   
     cd FENGSim/toolkit
-    git clone https://github.com/OpenDigitalTwin-Dev/CFD.git
+    git clone https://github.com/FENGSim/CFD.git
   
 * 在 ``FENGSim/toolkit/CFD/openfoam`` 中有一个install脚本，该脚本是根据网站中Compiling Sources写的，直接运行该脚本可以在Ubuntu24.04下编译OpenFOAM，无需其他操作。 ::
   

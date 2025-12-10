@@ -20,12 +20,12 @@ install脚本是按照该介绍写的。MoveIt2的编译脚本的参考文献见
 
 * 首先克隆FENGSim。 ::
   
-    git clone https://github.com/OpenDigitalTwin-Dev/FENGSim.git
+    git clone https://github.com/FENGSim/FENGSim.git
 
 * 将DAE克隆到 ``FENGSim/toolkit`` 路径下。 ::
   
     cd FENGSim/toolkit
-    git clone https://github.com/OpenDigitalTwin-Dev/DAE.git
+    git clone https://github.com/FENGSim/DAE.git
 
 * 在 ``FENGSim/toolkit/DAE/ros2/ros2/`` 中有一个install脚本，运行该脚本安装ROS2。 ::
   
