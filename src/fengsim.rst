@@ -2,6 +2,8 @@
 FENGSim
 ######################
 
+FENGSim is a CAX framework for adaptive processing.
+
 .. toctree::
    :maxdepth: 1
       
