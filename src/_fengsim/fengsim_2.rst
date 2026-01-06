@@ -8,7 +8,7 @@ Docker
 
 将FENGSim一次性部署在服务器上，供多个用户使用。采用Docker避免部署对宿主机的影响，在 ``FENGSim/cli`` 路径下有两个脚本，分别为test-docker.sh和test-docker-gui.sh，这两个脚本默认FENGSim保存在路径 ``$HOME/FENGSim`` 中，运行脚本都会建立Ubuntu24.04容器并进入，test-docker-gui.sh建立的容器可以运行图形用户界面。
 
-In the ``FENGSim/cli directory``, the ``test-docker-gui`` shell script creates a Docker container named ``test`` based on Ubuntu 24.04 with GUI support.
+In the ``FENGSim/cli`` directory, the ``test-docker-gui`` shell script creates a Docker container named ``test`` based on Ubuntu 24.04 with GUI support.
 
 
 之后在宿主机上按照如下命令建立Docker组，并添加成员。 ::
