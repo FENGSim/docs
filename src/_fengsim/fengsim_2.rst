@@ -31,6 +31,8 @@ To enter the Docker container: ::
 To build FENGSim in a container that requires some Qt libraries, first set the environment variables: ::
   
   export QT_DEBUG_PLUGINS=1
+  cd FENGSim
+  ./install
 
 The libraries could be installed according to the error messages.
 
