@@ -9,9 +9,9 @@ Build and Install
 * To clone Multix: ::
   
     cd FENGSim/toolkit
-    git clone https://github.com/OpenDigitalTwin-Dev/MultiX.git
+    ./multix
   
 * To build MultiX: ::
   
-    cd FENGSim/toolkit/MultiX/
+    cd FENGSim/toolkit/MultiX
     ./install   
