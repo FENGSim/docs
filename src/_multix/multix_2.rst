@@ -6,7 +6,7 @@ Build and Install
   
     git clone https://github.com/OpenDigitalTwin-Dev/FENGSim.git
   
-* To clone Multix: ::
+* To clone MultiX: ::
   
     cd FENGSim/toolkit
     ./multix
