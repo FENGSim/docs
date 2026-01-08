@@ -2,10 +2,10 @@
 Examples
 **********************
 
-Please run MultiX using the following commands. ::
+To run MultiX: ::
 
-  cd FENGSim/starter/multix
-  ./../../toolkit/MultiX/build/multix
+  cd FENGSim/toolkit/MultiX/build
+  ./multix
 
 Multix has three couplers: one for large deformation, contact, and friction in fluid-solid/solid-solid problems; one for multiphase-multicomponent fluid; and one for assembly.
 
