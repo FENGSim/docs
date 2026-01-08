@@ -35,7 +35,7 @@ SU2网站为 `<https://su2code.github.io/docs_v7/home/>`_ 。在网站Docs菜单
 算例测试
 **********************
 
-在 ``FENGSim/starter/su2/quickstart`` 目录中保存了网站Docs菜单中Quick Start的例子，运行如下命令。 ::
+在 ``FENGSim/starter/su2/quickstart`` 目录中保存了网站Docs菜单中Quick Start的例子，该例子是Euler方程/可压/vertex-centered，运行如下命令。 ::
   
     cd FENGSim/starter/su2/quickstart
     mpirun -np 4 ./../../../toolkit/CFD/install/su2_install/bin/SU2_CFD inv_NACA0012.cfg

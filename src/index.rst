@@ -1,11 +1,8 @@
 ###########################
-Introduction
+FENGSim
 ###########################
 
- 
-该文档介绍了SDK中各个软件的参考文献、编译安装、算例测试、前后处理，未来将进一步包括SDK中的函数接口。
-
-SDK下载地址为 `<https://github.com/FENGSim/FENGSim>`_ ，网站地址为 `<https://fengsim.github.io/>`_ 。
+This introduction includes the references, build and install, examples, pre/post-processing for every software. The download address for FENGSim is `<https://github.com/FENGSim/FENGSim>`_ and it's website is `<https://fengsim.github.io/>`_.
 
 
 .. Hidden TOCs
@@ -43,15 +40,5 @@ SDK下载地址为 `<https://github.com/FENGSim/FENGSim>`_ ，网站地址为 `<
    template
 
 
-* 固体
-   * 模态，homogeneous Dirichlet BC，homogeneous Neumann BC，非均匀材料
-* 流体
-   * Euler方程，可压，vertex-centered
-* 电磁
-   * 静电，ZeroCharge（homogeneous Neumann BC），Ground（homogeneous Dirichlet BC），Terminal（Dirichlet BC为常数）
-   * 静磁，PEC（homogeneous Dirichlet BC），PMC（homogeneous Neumann BC），SurfaceCurrent（Source Term），非线性
-* 多体动力学
-   * 2自由度机械臂正逆运动学方程，关节角度和末端执行器位置姿态
-   * 2自由度机械臂正逆动力学方程，关节角度和关节力矩
-   * 6自由度机械臂正逆运动学方程，关节角度和末端执行器位置姿态
-   * 6自由度机械臂正逆动力学方程，关节角度和关节力矩
+
+

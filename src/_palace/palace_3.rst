@@ -2,6 +2,9 @@
 算例测试
 **********************
 
+* 静电，ZeroCharge（homogeneous Neumann BC），Ground（homogeneous Dirichlet BC），Terminal（Dirichlet BC为常数）
+* 静磁，PEC（homogeneous Dirichlet BC），PMC（homogeneous Neumann BC），SurfaceCurrent（Source Term），非线性
+     
 ======================
 静电算例
 ======================
