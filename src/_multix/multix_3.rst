@@ -1,5 +1,5 @@
 **********************
-Tests
+Examples
 **********************
 
 Please run MultiX using the following commands. ::
