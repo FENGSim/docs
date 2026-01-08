@@ -2,7 +2,7 @@
 FENGSim
 ###########################
 
-This introduction includes the references, build and install, examples, pre/post-processing for every software in the SDK. The download address for FENGSim is `<https://github.com/FENGSim/FENGSim>`_ and it's website is `<https://fengsim.github.io/>`_.
+This manual includes the references, build and install, examples, pre/post-processing for every software in the SDK. The download address for FENGSim is `<https://github.com/FENGSim/FENGSim>`_ and it's website is `<https://fengsim.github.io/>`_.
 
 
 .. Hidden TOCs
