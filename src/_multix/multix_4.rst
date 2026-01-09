@@ -3,6 +3,13 @@
 Pre/Post-Processing
 **********************
 
+``.xml`` and ``.conf`` files are configuration files, while ``.dat`` and ``.geo`` files are mesh data files.
+
+To convert between ``.geo`` and ``.dat`` files: ::
+
+  cd FENGSim/starter/multix
+  python3 dat2geo.py or python3 geo2dat.py
+
 MultiX目前有两种配置文件，之后可以进一步合并，分别是.conf和.xml。
 .xml保存在各个模块的 ``conf`` 路径下，例如 ``FENGSim/starter/multix/Maxwell/conf`` 路径下的 ``configure.xml`` 。
 MultiX的网格文件格式是.geo，在 ``FENGSim/starter/multix`` 路径下的脚本程序 ``dat2geo.py`` 和 ``geo2dat.py`` ，可以将.dat格式和.geo格式互相转换。
@@ -31,7 +38,7 @@ MultiX的网格文件格式是.geo，在 ``FENGSim/starter/multix`` 路径下的
 
 	   
 --------------------
-dat转geo
+From .dat to .geo
 --------------------
 
 .. image:: fig/dat2geo.png
@@ -40,7 +47,7 @@ dat转geo
    :align: center
 
 --------------------
-geo转dat
+From .geo to .dat
 --------------------
 
 .. image:: fig/geo2dat.png
