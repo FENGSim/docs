@@ -10,10 +10,6 @@ To convert between ``.geo`` and ``.dat`` files: ::
   cd FENGSim/starter/multix
   python3 dat2geo.py or python3 geo2dat.py
 
-MultiX目前有两种配置文件，之后可以进一步合并，分别是.conf和.xml。
-.xml保存在各个模块的 ``conf`` 路径下，例如 ``FENGSim/starter/multix/Maxwell/conf`` 路径下的 ``configure.xml`` 。
-MultiX的网格文件格式是.geo，在 ``FENGSim/starter/multix`` 路径下的脚本程序 ``dat2geo.py`` 和 ``geo2dat.py`` ，可以将.dat格式和.geo格式互相转换。
-
 在静磁模块的 ``FENGSim/starter/multix/Maxwell/conf`` 路径下的 ``configure.xml`` 配置文件中比较重要的是定义线圈中的电流。
 在线圈Geom属性中定义了几何尺寸，例如下面xml代码中的Geom一行，一共四个数值。
 其中第一个数值和第二个数值如图中的Geom[0]和Geom[1]，
@@ -34,7 +30,6 @@ MultiX的网格文件格式是.geo，在 ``FENGSim/starter/multix`` 路径下的
    :scale: 50 %
    :alt: alternate text
    :align: center
-
 
 	   
 --------------------
