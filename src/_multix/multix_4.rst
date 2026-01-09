@@ -1,3 +1,4 @@
+
 	   
 **********************
 Pre/Post-Processing
@@ -5,7 +6,7 @@ Pre/Post-Processing
 
 ``.xml`` and ``.conf`` files are configuration files, while ``.dat`` and ``.geo`` files are mesh data files.
 
-To convert between ``.geo`` and ``.dat`` files: ::
+To convert ``.dat`` to ``.geo`` ::
 
   cd FENGSim/starter/multix
   python3 dat2geo.py
@@ -15,7 +16,7 @@ To convert between ``.geo`` and ``.dat`` files: ::
    :alt: alternate text
    :align: center
 
-::
+To convert ``.geo`` to ``.dat`` ::
    
   cd FENGSim/starter/multix
   python3 geo2dat.py
