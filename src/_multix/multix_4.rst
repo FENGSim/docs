@@ -10,6 +10,16 @@ To convert between ``.geo`` and ``.dat`` files: ::
   cd FENGSim/starter/multix
   python3 dat2geo.py or python3 geo2dat.py
 
+.. image:: fig/dat2geo.png
+   :scale: 50 %
+   :alt: alternate text
+   :align: center
+
+.. image:: fig/geo2dat.png
+   :scale: 50 %
+   :alt: alternate text
+   :align: center
+
 在静磁模块的 ``FENGSim/starter/multix/Maxwell/conf`` 路径下的 ``configure.xml`` 配置文件中比较重要的是定义线圈中的电流。
 在线圈Geom属性中定义了几何尺寸，例如下面xml代码中的Geom一行，一共四个数值。
 其中第一个数值和第二个数值如图中的Geom[0]和Geom[1]，
@@ -32,20 +42,3 @@ To convert between ``.geo`` and ``.dat`` files: ::
    :align: center
 
 	   
---------------------
-From .dat to .geo
---------------------
-
-.. image:: fig/dat2geo.png
-   :scale: 50 %
-   :alt: alternate text
-   :align: center
-
---------------------
-From .geo to .dat
---------------------
-
-.. image:: fig/geo2dat.png
-   :scale: 50 %
-   :alt: alternate text
-   :align: center
