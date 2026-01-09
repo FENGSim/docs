@@ -8,12 +8,17 @@ Pre/Post-Processing
 To convert between ``.geo`` and ``.dat`` files: ::
 
   cd FENGSim/starter/multix
-  python3 dat2geo.py or python3 geo2dat.py
+  python3 dat2geo.py
 
 .. image:: fig/dat2geo.png
    :scale: 50 %
    :alt: alternate text
    :align: center
+
+::
+   
+  cd FENGSim/starter/multix
+  python3 geo2dat.py
 
 .. image:: fig/geo2dat.png
    :scale: 50 %
