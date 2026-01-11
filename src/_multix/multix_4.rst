@@ -36,7 +36,7 @@ Coil
 As shown in the figure below, the coil in the ``.xml`` file is defined by four parameters: three for its projection and one for its height.
 
 .. image:: fig/coil.png
-   :scale: 100 %
+   :scale: 80 %
    :alt: alternate text
    :align: center
 
