@@ -30,7 +30,7 @@ EM
 To run the example: ::
 
   cd FENGSim/starter/multix/
-  ./multix
+  ./run
   paraview data/vtk/magnetostatics_nonlinear_domain.vtk
 
 .. image:: fig/static_mag.png
