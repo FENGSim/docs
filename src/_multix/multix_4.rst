@@ -5,7 +5,7 @@ Pre/Post-Processing
 ``.conf`` files are configuration files, while ``.geo`` files are mesh data files.
 
 =======================
-Conversion 
+Formats
 =======================
 
 The conversions are between ``.xml`` and ``.conf`` files, and between ``.dat`` and ``.geo`` files.

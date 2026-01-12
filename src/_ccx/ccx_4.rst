@@ -13,7 +13,7 @@ To convert ``.frd`` files to ``.vtk`` files: ::
 For more details about the ``ccx2paraview`` converter, please refer to its ``README.md`` file.
 
 =======================
-Conversion 
+Formats
 =======================
 
 -------------------------------------------
