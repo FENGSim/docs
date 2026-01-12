@@ -7,7 +7,7 @@ To run the modal example: ::
   cd FENGSim/starter/ccx/Mesh1
   ./run
 
-The ``pre.fbl`` script runs in cgx to generate an ``all.msh`` file in ``inp`` format. The resulting ``.gif`` files are saved to ``FENGSim/starter/ccx/Mesh1/Refs``
+The ``pre.fbl`` script runs in cgx to generate an ``all.msh`` file in ``.inp`` format. The resulting ``.gif`` files are saved to ``FENGSim/starter/ccx/Mesh1/Refs``.
 
 +------------------------------------+------------------------------------+-----------------------------------+
 | .. image:: fig/modal/shape_1.gif   | .. image:: fig/modal/shape_2.gif   | .. image:: fig/modal/shape_3.gif  |

@@ -2,69 +2,23 @@
 Pre/Post-Processing
 **********************
 
-==========================
-Paraview查看模态动画
-==========================
+Calculix uses the Abaqus ``.inp`` format for input files. The results are stored in ``.frd`` files which can be converted to ``.vtk`` format.
 
-用Paraview也可以查看模态的动画，具体见VTK的AnimateModes类介绍如下，链接为 `<https://vtk.org/doc/nightly/html/classvtkAnimateModes.html>`_ 。 ::
-
-  For certain file formats, like Exodus, simulation codes may use
-  the timesteps and time values to represent quantities other than time.
-  For example, for modal analysis, the natural frequency for each mode
-  may be used as the time value. vtkAnimateModes can be used to reinterpret
-  time as mode shapes. The filter can also animate vibrations for
-  each mode shape (when AnimateVibrations is set to true).
-  In that case, the time requested by the downstream pipeline is used to
-  scale the displacement magnitude for a mode shape in a sinusoidal pattern,
-  cos(2*pi * requested-time).
-
-具体操作参考下图。
-
-.. image:: fig/ccx/modal.png
-   :scale: 50 %
-   :alt: alternate text
-   :align: center
-	   
-首先用Paraview打开 ``FENGSim/starter/ccx/beam/`` 路径下的modal.08.vtk，
-点击Pipeline Browser里的modal.08.vtk，点击WarpByVector的按钮，该按钮对应工具栏中发生变形的图标，
-再点击Pipeline Browser里的modal.08.vtk，选择Filters里的Animate Modes。这里需要注意的是
-点击WarpByVector和选择Animate Modes之前一定要先点击modal.08.vtk，modal.08.vtk是数据源，
-其他操作是基于数据源操作，一定要先选择数据源。
-
-其次点击Pipeline Browser里的WarpByVector1，在Properties中的Scale Factor进行刷新，
-即点击最右侧两个箭头循环的按钮，刷新后Scale Factor显示3.051660754888145e-05，复制该数据。
-
-最后点击Pipeline Browser里的AnimateModes1，将复制的3.051660754888145e-05粘贴到Properties中的
-Displacement Magnitude里，同时取消下面的Displacement Preapplied。
-
-+-----------------------------------------+-----------------------------------------+
-| .. image:: fig/ccx/shape_8.gif          | .. image:: fig/ccx/modal.gif            |
-|    :width: 350px                        |    :width: 350px                        |
-+-----------------------------------------+-----------------------------------------+
-
-	   
-==========================
-格式转换
-==========================
-
---------------------
-frd转vtk
---------------------
-
-CalculiX前处理文件就是Abaqus的inp格式，后处理有一个python的模块，名字叫做ccx2paraview，可以将CalculiX自己的frd格式转成vtk或者vtu，在 ``FENGSim/toolkit/MultiX/extern/Calculix/ccx2paraview`` 目录下的README.md中有ccx2paraview的使用介绍，可以按照如下命令操作。 ::
+To convert ``.frd`` files to ``.vtk`` files: ::
 
   cd FENGSim/starter/ccx/Mesh1
   python3 ./../../../toolkit/MultiX/extern/Calculix/ccx2paraview/ccx2paraview.py modal.frd vtu
   python3 ./../../../toolkit/MultiX/extern/Calculix/ccx2paraview/ccx2paraview.py modal.frd vtk
 
-.. image:: fig/ccx_1.gif
-   :scale: 50 %
-   :alt: alternate text
-   :align: center
+For more details about the ``ccx2paraview`` converter, please refer to its ``README.md`` file.
 
---------------------
-xml转inp
---------------------
+=======================
+Conversion 
+=======================
+
+-------------------------------------------
+.xml and .msh files to .inp files
+-------------------------------------------
 
 在 ``FENGSim/starter/ccx/Mesh1`` 目录下有configure_modal.xml、all.msh、all2.msh、modal.inp、xml2inp.py。
 all.msh和all2.msh是inp格式的网格文件，虽然后缀名是.msh，all.msh是由cgx生成的Mesh1算例的原始网格文件，all2.msh是gmsh生成的新例子的网格文件。
@@ -91,9 +45,9 @@ xml2inp.py的运行结果如下图，文件名称不用输入后缀名。
    :alt: alternate text
    :align: center
 
--------------------------------
-xml转inp（带位移边界条件）
--------------------------------
+-----------------------------------------------------------------
+.xml and .msh files to .inp files (with boundary conditions)
+-----------------------------------------------------------------
 
 上面例子是没有边界位移约束情况下的，如果添加位移约束，首先要在Gmsh中定义边界组，如下图，这里需要注意的是，即使不定义边界组，Gmsh导出.inp格式文件也会自动给单元集合命名。
 
@@ -132,4 +86,70 @@ configure_modal.xml是.xml格式配置文件，all.msh是Gmsh生成的.inp格式
    :alt: alternate text
    :align: center
 
-.. include:: oiltank.rst
+--------------------------------------
+.xml and .dat files to .inp files
+--------------------------------------
+
+在 ``FENGSim/starter/ccx/oiltank`` 目录下有configure_modal.xml、oiltank.dat、dat2inp.py。
+configure_modal.xml是配置文件，oiltank.dat是网格文件。
+dat2inp.py提取configure_modal.xml文件中的数据，提取oiltank.dat文件中的数据，将.dat格式转成.inp格式，合并生成新的modal.inp。
+
+dat2inp.py的运行结果如下图，文件名称不用输入后缀名。
+
+.. image:: fig/ccx/oiltank.jpg
+   :scale: 50 %
+   :alt: alternate text
+   :align: center
+
+.dat文件格式很简单，如下第1行的31276为顶点个数，99818为单元个数，
+第8行的sphere_tank为单元组名称，56644为单元个数，第12行outer_surface_nodes为顶点组名称，9247为顶点个数，其他类似。 ::
+  
+  3 4 31276 99818
+  1 -8315 2.55536e-12 0
+  ......
+  31276 8315 0 10850 
+  1 59 2 1 98
+  ......
+  99818 31180 31223 31222 31179
+  8 sphere_tank 56644
+  2601
+  .....
+  97218
+  7 outer_surface_nodes 9247
+  788
+  .....
+  30489
+  7 inner_surface_nodes 8317
+  862
+  .....
+  30415
+  7 fixed_nodes 200
+  1
+  .....
+  31222
+  8 guandao 2866
+  47324
+  .....
+  52495
+  8 support 40308
+  1
+  .....
+  99818
+  7 guandao_fixed_nodes 24
+  14829
+  .....
+  16488
+
+运行以下命令。 ::
+  
+  cd FENGSim/starter/ccx/oiltank
+  mkdir Refs
+  ./../../../toolkit/MultiX/extern/Calculix/bin/ccx_2.21 modal
+  ./../../../toolkit/MultiX/extern/Calculix/bin/cgx -b shapes.fbl
+  python3 ./../../../toolkit/MultiX/extern/Calculix/ccx2paraview/ccx2paraview.py modal.frd vtk
+
+.. image:: fig/ccx/oiltank.gif
+   :scale: 50 %
+   :alt: alternate text
+   :align: center
+
