@@ -17,7 +17,7 @@ Conversion
 =======================
 
 -------------------------------------------
-.xml and .msh files to .inp files
+from .xml and .msh to .inp
 -------------------------------------------
 
 在 ``FENGSim/starter/ccx/Mesh1`` 目录下有configure_modal.xml、all.msh、all2.msh、modal.inp、xml2inp.py。
@@ -46,7 +46,7 @@ xml2inp.py的运行结果如下图，文件名称不用输入后缀名。
    :align: center
 
 -----------------------------------------------------------------
-.xml and .msh files to .inp files (with boundary conditions)
+from .xml and .msh to .inp (with boundary conditions)
 -----------------------------------------------------------------
 
 上面例子是没有边界位移约束情况下的，如果添加位移约束，首先要在Gmsh中定义边界组，如下图，这里需要注意的是，即使不定义边界组，Gmsh导出.inp格式文件也会自动给单元集合命名。
@@ -87,7 +87,7 @@ configure_modal.xml是.xml格式配置文件，all.msh是Gmsh生成的.inp格式
    :align: center
 
 --------------------------------------
-.xml and .dat files to .inp files
+from .xml and .dat to .inp
 --------------------------------------
 
 在 ``FENGSim/starter/ccx/oiltank`` 目录下有configure_modal.xml、oiltank.dat、dat2inp.py。
