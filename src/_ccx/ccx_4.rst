@@ -26,10 +26,9 @@ The ``xml2inp.py`` script converts ``configure_modal.xml`` and a mesh file (``al
 To convert ``.xml`` and ``.msh`` to ``.inp``: ::
   
   cd FENGSim/starter/ccx/Mesh1
-  mkdir Refs
   python3 xml2inp.py 
-  input .xml file: configure_modal
-  .xml file is  configure_modal.xml
+  input .xml file: configure
+  .xml file is  configure.xml
   input .msh file: all2
   .msh file is  all2.msh
   ./../../../toolkit/MultiX/extern/Calculix/bin/ccx_2.21 modal2
@@ -44,38 +43,31 @@ To convert ``.xml`` and ``.msh`` to ``.inp``: ::
 from .xml and .msh to .inp (with boundary conditions)
 -----------------------------------------------------------------
 
-上面例子是没有边界位移约束情况下的，如果添加位移约束，首先要在Gmsh中定义边界组，如下图，这里需要注意的是，即使不定义边界组，Gmsh导出.inp格式文件也会自动给单元集合命名。
+GMSH automatically assigns unique IDs to all geometric sets. GMSH also defines physical groups for boundary conditions and materials, as shown in the figure below. 
 
 .. image:: fig/ccx/1.png
    :scale: 50 %
    :alt: alternate text
    :align: center
 
-	   
-其次需要注意的是在Gmsh导出all.msh的时候，选择Save groups of nodes，如下图，因为边界位移约束是定义在结点集合上，如果不选择会导出不了结点集合。
+Since boundary conditions are defined on node sets, the option "Save groups of nodes" is choosed to export ``.inp`` files, as shown in the figure below.
    
 .. image:: fig/ccx/2.png
    :scale: 50 %
    :alt: alternate text
    :align: center
 
-xml2inp.py的运行结果如下图，文件名称不用输入后缀名。
-configure_modal.xml是.xml格式配置文件，all.msh是Gmsh生成的.inp格式文件，xml2inp.py脚本程序将configure_modal.xml中配置内容转换成.inp格式同时合并all.msh中的网格数据，
-生成modal.inp文件给CalculiX使用。
-
-.. image:: fig/ccx/3.png
-   :scale: 50 %
-   :alt: alternate text
-   :align: center
-
-运行以下命令。 ::
+To convert ``.xml`` and ``.msh`` to ``.inp``: ::
   
   cd FENGSim/starter/ccx/beam
-  mkdir Refs
+  python3 xml2inp.py 
+  input .xml file: configure
+  .xml file is  configure.xml
+  input .msh file: all
+  .msh file is  all.msh
   ./../../../toolkit/MultiX/extern/Calculix/bin/ccx_2.21 modal
-  ./../../../toolkit/MultiX/extern/Calculix/bin/cgx -b shapes.fbl
   python3 ./../../../toolkit/MultiX/extern/Calculix/ccx2paraview/ccx2paraview.py modal.frd vtk
-
+  
 .. image:: fig/ccx/beam.gif
    :scale: 50 %
    :alt: alternate text
