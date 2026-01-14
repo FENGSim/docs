@@ -34,7 +34,7 @@ To convert ``.xml`` and ``.msh`` to ``.inp``: ::
   ./../../../toolkit/MultiX/extern/Calculix/bin/ccx_2.21 modal2
   python3 ./../../../toolkit/MultiX/extern/Calculix/ccx2paraview/ccx2paraview.py modal2.frd vtk
 
-.. image:: fig/ccx_2.gif
+.. image:: fig/blade.gif
    :height: 200px
    :alt: alternate text
    :align: center
