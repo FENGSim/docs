@@ -20,7 +20,7 @@ Formats
 from .xml and .msh to .inp
 -------------------------------------------
 
-The ``xml2inp.py`` script converts ``configure_modal.xml`` and a mesh file (``all.msh`` from CGX or ``all2.msh`` from GMSH) into a single ``modal2.inp`` file.
+The ``xml2inp.py`` script converts ``configure.xml`` and a mesh file (``all.msh`` from CGX or ``all2.msh`` from GMSH) into a single ``modal2.inp`` file.
 ``xml2inp.py`` removes line and face elements from the ``.msh`` file.
 
 To convert ``.xml`` and ``.msh`` to ``.inp``: ::
@@ -82,17 +82,19 @@ To convert ``.xml`` and ``.msh`` to ``.inp``: ::
 from .xml and .dat to .inp
 --------------------------------------
 
-在 ``FENGSim/starter/ccx/oiltank`` 目录下有configure_modal.xml、oiltank.dat、dat2inp.py。
-configure_modal.xml是配置文件，oiltank.dat是网格文件。
-dat2inp.py提取configure_modal.xml文件中的数据，提取oiltank.dat文件中的数据，将.dat格式转成.inp格式，合并生成新的modal.inp。
+The ``dat2inp.py`` script converts ``configure.xml`` and ``oiltank.dat`` into a single ``modal.inp`` file.
 
-dat2inp.py的运行结果如下图，文件名称不用输入后缀名。
-
-.. image:: fig/oiltank.jpg
-   :scale: 50 %
-   :alt: alternate text
-   :align: center
-
+To convert ``.xml`` and ``.dat`` to ``.inp``: ::
+  
+  cd FENGSim/starter/ccx/oiltank
+  python3 dat2inp.py 
+  input .xml file: configure
+  .xml file is configure.xml
+  input .dat file: oiltank
+  .msh file is oiltank.dat
+  ./../../../toolkit/MultiX/extern/Calculix/bin/ccx_2.21 modal
+  python3 ./../../../toolkit/MultiX/extern/Calculix/ccx2paraview/ccx2paraview.py modal.frd vtk
+  
 .dat文件格式很简单，如下第1行的31276为顶点个数，99818为单元个数，
 第8行的sphere_tank为单元组名称，56644为单元个数，第12行outer_surface_nodes为顶点组名称，9247为顶点个数，其他类似。 ::
   
