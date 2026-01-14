@@ -17,10 +17,10 @@ Formats
 =======================
 
 -------------------------------------------
-from .xml and .msh to .inp
+From .xml and .msh to .inp
 -------------------------------------------
 
-The ``xml2inp.py`` script converts ``configure.xml`` and a mesh file (``all.msh`` from CGX or ``all2.msh`` from GMSH) into a single ``modal2.inp`` file.
+The ``xml2inp.py`` script converts ``configure.xml`` and a mesh file (``all.msh`` from CGX or ``all2.msh`` from Gmsh) into a single ``modal2.inp`` file.
 ``xml2inp.py`` removes line and face elements from the ``.msh`` file.
 
 To convert ``.xml`` and ``.msh`` to ``.inp``: ::
@@ -40,10 +40,10 @@ To convert ``.xml`` and ``.msh`` to ``.inp``: ::
    :align: center
 
 -----------------------------------------------------------------
-from .xml and .msh to .inp (with boundary conditions)
+From .xml and .msh to .inp (with boundary conditions)
 -----------------------------------------------------------------
 
-GMSH automatically assigns unique IDs to all geometric sets. GMSH also defines physical groups for boundary conditions and materials, as shown in the figure below.
+Gmsh automatically assigns unique IDs to all geometric sets. Gmsh also defines physical groups for boundary conditions and materials, as shown in the figure below.
 
 To create the model with physical groups by scripts: ::
 
@@ -79,7 +79,7 @@ To convert ``.xml`` and ``.msh`` to ``.inp``: ::
    :align: center
 
 --------------------------------------
-from .xml and .dat to .inp
+From .xml and .dat to .inp
 --------------------------------------
 
 The ``dat2inp.py`` script converts ``configure.xml`` and ``oiltank.dat`` into a single ``modal.inp`` file.
