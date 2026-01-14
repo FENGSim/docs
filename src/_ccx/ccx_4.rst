@@ -102,7 +102,7 @@ To convert ``.xml`` and ``.dat`` to ``.inp``: ::
 
 The ``.dat`` file format is defined as follows:
 
-- Line 1: The number ``31276`` represents the total number of vertices, and ``99818`` represents the total number of cells.
+- Line 1: The number ``31276`` represents the total number of vertices, and ``99818`` represents the total number of cells.  
 - Line 8: ``sphere_tank`` is the name of a cell group, and ``56644`` is the number of cells in this group.
 - Line 12: ``outer_surface_nodes`` is the name of a vertex group, and ``9247`` is the number of vertices in this group.
 - Other lines follow a similar pattern. 
