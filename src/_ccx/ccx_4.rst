@@ -28,14 +28,14 @@ To convert ``.xml`` and ``.msh`` to ``.inp``: ::
   cd FENGSim/starter/ccx/Mesh1
   python3 xml2inp.py 
   input .xml file: configure
-  .xml file is  configure.xml
+  .xml file is configure.xml
   input .msh file: all2
-  .msh file is  all2.msh
+  .msh file is all2.msh
   ./../../../toolkit/MultiX/extern/Calculix/bin/ccx_2.21 modal2
   python3 ./../../../toolkit/MultiX/extern/Calculix/ccx2paraview/ccx2paraview.py modal2.frd vtk
 
 .. image:: fig/ccx_2.gif
-   :scale: 50 %
+   :height: 200px
    :alt: alternate text
    :align: center
 
@@ -69,7 +69,7 @@ To convert ``.xml`` and ``.msh`` to ``.inp``: ::
   python3 ./../../../toolkit/MultiX/extern/Calculix/ccx2paraview/ccx2paraview.py modal.frd vtk
   
 .. image:: fig/ccx/beam.gif
-   :scale: 50 %
+   :height: 200px
    :alt: alternate text
    :align: center
 
