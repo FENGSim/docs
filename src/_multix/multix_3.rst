@@ -18,7 +18,7 @@ ALE
    :align: center
 
 ========================
-Assembly
+Assemble
 ========================
 .. image:: fig/modal_mpc.gif
    :height: 200px
