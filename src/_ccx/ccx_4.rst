@@ -45,19 +45,19 @@ from .xml and .msh to .inp (with boundary conditions)
 
 GMSH automatically assigns unique IDs to all geometric sets. GMSH also defines physical groups for boundary conditions and materials, as shown in the figure below.
 
-To build the model with physical groups by scripts: ::
+To create the model with physical groups by scripts: ::
 
   cd FENGSim/starter/ccx/beam
   gmsh beam
 
-.. image:: fig/ccx/1.png
+.. image:: fig/1.png
    :scale: 50 %
    :alt: alternate text
    :align: center
 
 Since boundary conditions are defined on node sets, the option "Save groups of nodes" is choosed to export ``.inp`` files, as shown in the figure below.
    
-.. image:: fig/ccx/2.png
+.. image:: fig/2.png
    :scale: 50 %
    :alt: alternate text
    :align: center
@@ -73,7 +73,7 @@ To convert ``.xml`` and ``.msh`` to ``.inp``: ::
   ./../../../toolkit/MultiX/extern/Calculix/bin/ccx_2.21 modal
   python3 ./../../../toolkit/MultiX/extern/Calculix/ccx2paraview/ccx2paraview.py modal.frd vtk
   
-.. image:: fig/ccx/beam.gif
+.. image:: fig/beam.gif
    :height: 200px
    :alt: alternate text
    :align: center
@@ -88,7 +88,7 @@ dat2inp.py提取configure_modal.xml文件中的数据，提取oiltank.dat文件�
 
 dat2inp.py的运行结果如下图，文件名称不用输入后缀名。
 
-.. image:: fig/ccx/oiltank.jpg
+.. image:: fig/oiltank.jpg
    :scale: 50 %
    :alt: alternate text
    :align: center
@@ -140,7 +140,7 @@ dat2inp.py的运行结果如下图，文件名称不用输入后缀名。
   ./../../../toolkit/MultiX/extern/Calculix/bin/cgx -b shapes.fbl
   python3 ./../../../toolkit/MultiX/extern/Calculix/ccx2paraview/ccx2paraview.py modal.frd vtk
 
-.. image:: fig/ccx/oiltank.gif
+.. image:: fig/oiltank.gif
    :scale: 50 %
    :alt: alternate text
    :align: center
