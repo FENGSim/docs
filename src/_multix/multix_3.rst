@@ -26,7 +26,7 @@ Assemble
    :align: center
 
 ========================
-EM
+Electrodynamics
 ========================
 
 To run the example: ::
