@@ -13,6 +13,7 @@ To run MultiX: ::
 ALE
 ========================
 .. image:: fig/ale.gif
+   :height: 400px
    :alt: alternate text
    :align: center
 
@@ -20,6 +21,7 @@ ALE
 Assembly
 ========================
 .. image:: fig/modal_mpc.gif
+   :height: 200px
    :alt: alternate text
    :align: center
 
@@ -34,7 +36,7 @@ To run the example: ::
   paraview data/vtk/magnetostatics_nonlinear_domain.vtk
 
 .. image:: fig/static_mag.png
-   :scale: 50 %
+   :height: 200px
    :alt: alternate text
    :align: center
 	   
@@ -44,6 +46,7 @@ Others
 We will re-implement the following MFEM topology optimization example using MultiX.
 
 .. image:: fig/topo.gif
+   :height: 200px
    :alt: alternate text
    :align: center
 	   

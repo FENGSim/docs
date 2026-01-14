@@ -85,7 +85,7 @@ from .xml and .dat to .inp
 The ``dat2inp.py`` script converts ``configure.xml`` and ``oiltank.dat`` into a single ``modal.inp`` file.
 
 To convert ``.xml`` and ``.dat`` to ``.inp``: ::
-  
+		
   cd FENGSim/starter/ccx/oiltank
   python3 dat2inp.py 
   input .xml file: configure
@@ -94,9 +94,20 @@ To convert ``.xml`` and ``.dat`` to ``.inp``: ::
   .msh file is oiltank.dat
   ./../../../toolkit/MultiX/extern/Calculix/bin/ccx_2.21 modal
   python3 ./../../../toolkit/MultiX/extern/Calculix/ccx2paraview/ccx2paraview.py modal.frd vtk
-  
-.dat文件格式很简单，如下第1行的31276为顶点个数，99818为单元个数，
-第8行的sphere_tank为单元组名称，56644为单元个数，第12行outer_surface_nodes为顶点组名称，9247为顶点个数，其他类似。 ::
+
+.. image:: fig/oiltank.gif
+   :height: 200px
+   :alt: alternate text
+   :align: center
+
+The ``.dat`` file format is defined as follows:
+
+- Line 1: The number ``31276`` represents the total number of vertices, and ``99818`` represents the total number of cells.
+- Line 8: ``sphere_tank`` is the name of a cell group, and ``56644`` is the number of cells in this group.
+- Line 12: ``outer_surface_nodes`` is the name of a vertex group, and ``9247`` is the number of vertices in this group.
+- Other lines follow a similar pattern. 
+
+::
   
   3 4 31276 99818
   1 -8315 2.55536e-12 0
@@ -134,16 +145,5 @@ To convert ``.xml`` and ``.dat`` to ``.inp``: ::
   .....
   16488
 
-运行以下命令。 ::
-  
-  cd FENGSim/starter/ccx/oiltank
-  mkdir Refs
-  ./../../../toolkit/MultiX/extern/Calculix/bin/ccx_2.21 modal
-  ./../../../toolkit/MultiX/extern/Calculix/bin/cgx -b shapes.fbl
-  python3 ./../../../toolkit/MultiX/extern/Calculix/ccx2paraview/ccx2paraview.py modal.frd vtk
 
-.. image:: fig/oiltank.gif
-   :scale: 50 %
-   :alt: alternate text
-   :align: center
 
