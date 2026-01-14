@@ -43,7 +43,12 @@ To convert ``.xml`` and ``.msh`` to ``.inp``: ::
 from .xml and .msh to .inp (with boundary conditions)
 -----------------------------------------------------------------
 
-GMSH automatically assigns unique IDs to all geometric sets. GMSH also defines physical groups for boundary conditions and materials, as shown in the figure below. 
+GMSH automatically assigns unique IDs to all geometric sets. GMSH also defines physical groups for boundary conditions and materials, as shown in the figure below.
+
+To build the model with physical groups by scripts: ::
+
+  cd FENGSim/starter/ccx/beam
+  gmsh beam
 
 .. image:: fig/ccx/1.png
    :scale: 50 %
