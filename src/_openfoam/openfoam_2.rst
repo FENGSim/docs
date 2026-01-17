@@ -3,18 +3,16 @@
 Build and Install
 **********************
 
-按照如下操作在FENGSim中编译OpenFOAM。
-
-* 首先克隆FENGSim。 ::
+* To clone FENGSim: ::
   
     git clone https://github.com/FENGSim/FENGSim.git
   
-* 再将CFD克隆到 ``FENGSim/toolkit`` 路径下。 ::
+* To clone CFD: ::
   
     cd FENGSim/toolkit
     git clone https://github.com/FENGSim/CFD.git
   
-* 在 ``FENGSim/toolkit/CFD/openfoam`` 中有一个install脚本，该脚本是根据网站中Compiling Sources写的，直接运行该脚本可以在Ubuntu24.04下编译OpenFOAM，无需其他操作。 ::
+* To install OpenFOAM: ::
   
     cd FENGSim/toolkit/CFD/openfoam
     ./install
