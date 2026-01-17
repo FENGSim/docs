@@ -16,17 +16,21 @@ Build and Install
   
     cd FENGSim/toolkit/CFD/openfoam
     ./install
+    
+OpenFOAM comprises two core repositories: OpenFOAM-dev and ThirdParty-dev. Note that the suffix -dev can be replaced with a specific version number, such as OpenFOAM-12 and ThirdParty-12. It is required to place both repositories (e.g., OpenFOAM-dev and ThirdParty-dev) in the same parent directory, as they are compiled together during the build process.
 
-OpenFOAM有两个仓库，分别是OpenFOAM-dev和ThirdParty-dev，dev可以换成版本号，例如OpenFOAM-12和ThirdParty-12。需要将OpenFOAM-dev和ThirdParty-dev保存在同一路径下，
-在OpenFOAM-dev目录下运行的编译命令还会编译ThirdParty-dev目录中的第三方库。OpenFOAM-dev目录下有三个子目录，分别为applications、test、tutorials，test和tutorials里有很多测试例子，例子里主要包括前处理文件，
-applications里有APP开发的例子，例子里主要包括二次开发的程序。OpenFOAM中使用了wmake编译工具，wmake是用脚本程序开发的，采用wmake又写了脚本程序Allwmake去执行编译，例如在OpenFOAM-dev目录下有Allwmake脚本程序。
-编译安装完后，为了运行可执行程序或者调用链接库，需要配置环境变量，运行如下命令。 ::
+Many examples (preprocessing files) can be found in ``FENGSim/toolkit/CFD/openfoam/OpenFOAM-dev/test`` and ``FENGSim/toolkit/CFD/openfoam/OpenFOAM-dev/tutorials``.
+Application examples (secondary development source codes) can be found in ``FENGSim/toolkit/CFD/openfoam/OpenFOAM-dev/applications``.
+
+The shell script ``wmake`` is the compilation tool for OpenFOAM. Scripts such as ``Allwmake`` utilize ``wmake`` to automate the build process.
+
+To set environmental variables for executing binaries or linking libraries: ::
   
     cd FENGSim/toolkit/CFD/openfoam
     source OpenFOAM-dev/etc/bashrc
     echo $FOAM_INST_DIR
 
-如果要编译APP，在 ``FENGSim/starter/openfoam/mkdir`` 中有一个例子，运行如下命令，会发现在当前目录下编译生成了可执行程序Test-mkdir，运行可执行程序，在当前目录下创建了一个test目录。 ::
+To run an application exmaple that creates a directory: ::
   
     cd FENGSim/starter/openfoam/mkdir
     wmake
