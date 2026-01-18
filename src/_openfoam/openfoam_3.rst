@@ -13,7 +13,7 @@ To run a solid example: ::
     cd FENGSim/starter/openfoam/platHole
     ./Allrun
     foamToVTK
-    paraview VTK/VTK/plateHole_100.vtk
+    paraview VTK/plateHole_100.vtk
         
 .. image:: fig/openfoam_1.png
    :scale: 50 %
