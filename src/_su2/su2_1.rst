@@ -1,0 +1,10 @@
+
+**********************
+References
+**********************
+
+* Website: `<https://su2code.github.io/docs_v7/home/>`_
+* Compilation: `<https://su2code.github.io/docs_v7/Build-SU2-Linux-MacOS/>`_
+* Examples: `<https://su2code.github.io/docs_v7/Quick-Start/>`_
+* Mesh format: `<https://su2code.github.io/docs_v7/Mesh-File/>`_
+
