@@ -2,7 +2,7 @@
 FENGSim
 ###########################
 
-This manual includes the references, build and install, examples, pre/post-processing for every software in the SDK.
+This manual includes the references, build and install, examples, pre/post-processing for every software in the SDK on Ubuntu 24.04.
 
 - GitHub: `<https://github.com/FENGSim/FENGSim>`_
 - Website: `<https://fengsim.github.io/>`_.
