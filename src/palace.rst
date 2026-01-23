@@ -4,7 +4,6 @@ Palace
 
 .. toctree::
    :maxdepth: 1
-   :hidden:
       
    _palace/palace_1
    _palace/palace_2
