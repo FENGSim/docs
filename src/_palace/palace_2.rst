@@ -2,38 +2,35 @@
 Build and Install
 **********************
 
-按照如下操作在FENGSim中编译Palace。
-
-* 首先克隆FENGSim。 ::
+* To clone FENGSim: ::
   
     git clone https://github.com/OpenDigitalTwin-Dev/FENGSim.git
 
-* 将MultiX克隆到 ``FENGSim/toolkit`` 路径下。 ::
+* To clone MultiX: ::
   
     cd FENGSim/toolkit
     git clone https://github.com/OpenDigitalTwin-Dev/MultiX.git
 
-* 将NLA克隆到 ``FENGSim/toolkit`` 路径下。 ::
+* To clone NLA: ::
   
     cd FENGSim/toolkit
     git clone https://github.com/OpenDigitalTwin-Dev/NLA.git
   
-* 将CEM克隆到 ``FENGSim/toolkit`` 路径下。 ::
+* To clone CEM: ::
   
     cd FENGSim/toolkit
     git clone https://github.com/OpenDigitalTwin-Dev/CEM.git
 
-* 在 ``FENGSim/toolkit/MultiX/extern/ALE/`` 中有一个install脚本，运行该脚本。 ::
+* To compile and install ALE: ::
   
     cd FENGSim/toolkit/MultiX/extern/ALE/
     ./install.sh
     
-* 在 ``FENGSim/toolkit/CEM/palace`` 中有一个install脚本，直接运行该脚本可以在Ubuntu24.04下编译Palace，无需其他操作。 ::
+* To compile and install Palace: ::
   
     cd FENGSim/toolkit/CEM/palace
     ./install
-
-编译后，Palace安装在 ``FENGSim/toolkit/CEM/install/palace_install`` 路径下。
+    ls ../install/palace_install
 
 这里需要注意的是， ``FENGSim/toolkit/CEM/palace/palace/models/postoperator.cpp`` 编译有问题。需要将以下函数名中的Coeff和VCoeff去掉。 ::
 
