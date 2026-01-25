@@ -2,25 +2,56 @@
 Examples
 **********************
 
-* 静电，ZeroCharge（homogeneous Neumann BC），Ground（homogeneous Dirichlet BC），Terminal（Dirichlet BC为常数）
-* 静磁，PEC（homogeneous Dirichlet BC），PMC（homogeneous Neumann BC），SurfaceCurrent（Source Term），非线性
+* Examples Path: ``FENGSim/toolkit/CEM/palace/examples/``
+* Documentation: For more details, see `<https://awslabs.github.io/palace/dev/examples/examples/>`_.
+
      
 ======================
-静电算例
+Electrostatics
 ======================
 
-直接运行Palace可执行程序 ``FENGSim/toolkit/CEM/install/palace_install/bin/palace`` 会有第三方链接库路径问题，暂时换一种方法运行。
-在 ``FENGSim/starter/palace/examples/`` 目录中保存了 ``FENGSim/toolkit/CEM/palace/examples/`` 目录下Palace自带的例子，例子介绍可见链接 `<https://awslabs.github.io/palace/dev/examples/examples/>`_ 。按照如下操作运行Capacitance Matrix for Two Spheres算例。 ::
+* Electrostatics: ZeroCharge (homogeneous Neumann b.c.)，Ground (homogeneous Dirichlet b.c.)，Terminal (constant Dirichlet b.c.)
 
+
+To run the example for the capacitance matrix of two spheres: ::
+  
   cd FENGSim/starter/palace/examples/spheres
   ./../../../../toolkit/CEM/palace/palace/build/palace-x86_64.bin spheres.json
-
-用Paraview打开 ``FENGSim/starter/palace/examples/spheres/postpro/paraview/electrostatic/electrostatic.pvd`` ，如下图。
+  paraview postpro/paraview/electrostatic/electrostatic.pvd
 
 .. image:: fig/palace_1.png
    :scale: 50 %
    :alt: alternate text
    :align: center
 
-.. include:: stasticmag.rst
+======================
+Magnetostatics
+======================
+
+Configurations: ::
+  
+  * PEC, homogeneous Dirichlet b.c.
+  * PMC, homogeneous Neumann b.c.
+  * SurfaceCurrent, source term
+  * nonlinear
+  
+From .xml to .json: ::
+
+  asa
+
+.. image:: fig/mag_0.png
+   :scale: 50 %
+   :alt: alternate text
+   :align: center
+
+To run the magnetostatic example ::
+  
+  cd FENGSim/starter/palace/examples/static_mag
+  ./../../../../toolkit/CEM/palace/palace/build/palace-x86_64.bin mag2.json
+  paraview postpro/paraview/magnetostatic/magnetostatic.pvd
++------------------------------------+------------------------------------+
+| .. image:: fig/mag_2.png           | .. image:: fig/mag_1.png           |
+|    :width: 350px                   |    :width: 350px                   |
++------------------------------------+------------------------------------+
+
 
