@@ -37,7 +37,7 @@ Configurations:
   * PEC, homogeneous Dirichlet b.c.
   * PMC, homogeneous Neumann b.c.
   * SurfaceCurrent, source term
-  * nonlinear
+  * Nonlinear materials
   
 From .xml to .json: ::
 
