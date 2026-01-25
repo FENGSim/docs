@@ -10,7 +10,11 @@ Examples
 Electrostatics
 ======================
 
-* Electrostatics: ZeroCharge (homogeneous Neumann b.c.)，Ground (homogeneous Dirichlet b.c.)，Terminal (constant Dirichlet b.c.)
+Configurations: 
+  
+  * ZeroCharge, homogeneous Neumann b.c.
+  * Ground, homogeneous Dirichlet b.c.
+  * Terminal, constant Dirichlet b.c.
 
 
 To run the example for the capacitance matrix of two spheres: ::
@@ -28,7 +32,7 @@ To run the example for the capacitance matrix of two spheres: ::
 Magnetostatics
 ======================
 
-Configurations: ::
+Configurations: 
   
   * PEC, homogeneous Dirichlet b.c.
   * PMC, homogeneous Neumann b.c.
@@ -37,18 +41,19 @@ Configurations: ::
   
 From .xml to .json: ::
 
-  asa
+  cd FENGSim/starter/palace/examples/static_mag
+  python3 xml2json.py
+  input .xml: configure
+  .xml is configure.xml
+  input .msh: mag
+  .msh is mesh/mag.msh
 
-.. image:: fig/mag_0.png
-   :scale: 50 %
-   :alt: alternate text
-   :align: center
-
-To run the magnetostatic example ::
+To run the magnetostatic example: ::
   
   cd FENGSim/starter/palace/examples/static_mag
   ./../../../../toolkit/CEM/palace/palace/build/palace-x86_64.bin mag2.json
   paraview postpro/paraview/magnetostatic/magnetostatic.pvd
+  
 +------------------------------------+------------------------------------+
 | .. image:: fig/mag_2.png           | .. image:: fig/mag_1.png           |
 |    :width: 350px                   |    :width: 350px                   |
