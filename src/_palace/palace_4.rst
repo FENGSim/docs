@@ -14,14 +14,25 @@ Palace uses the Gmsh ``.msh`` file format.
 Mesh Format
 ==========================
 
-Palace原始例子中给的网格文件spheres.msh是高阶有限元用的，在 ``FENGSim/starter/palace/examples/spheres/`` 目录下有一个spheres.geo文件，这个文件是gmsh建模的脚本，可以用gmsh打开spheres.geo，然后剖分得到一阶有限元的网格文件spheres2.msh，保存到 ``FENGSim/starter/palace/examples/spheres/mesh`` 目录下。这里需要注意的是，用Gmsh图形用户界面导出.msh文件时候，会弹出如下图对话框，不要选中Save all elements，否则Physical Groups的编号无法导出到.msh文件中。
+To install Julia: ::
 
-.. image:: fig/gmsh.png
-   :scale: 50 %
-   :alt: alternate text
-   :align: center
+  cd FENGSim/starter/palace/examples/spheres/mesh
+  ./install_julia_gmsh
 
-Gmsh的msh网格文件介绍可以在 `<https://web.mit.edu/gmsh_v3.0.1/gmsh.pdf>`_ 第9.1节找到，以spheres.msh为例介绍。 ::
+To generate the ``spheres.msh`` mesh file using Julia: ::
+
+  cd FENGSim/starter/palace/examples/spheres/mesh
+  julia mesh.jl
+
+To generate the ``spheres.msh`` mesh file using Gmsh: ::
+
+  cd FENGSim/starter/palace/examples/spheres/mesh
+  gmsh spheres.geo -3 -o "spheres2.msh" -format msh2
+
+If the mesh file is exported using Gmsh GUI, do not select the option "Save all elements".
+If this option is enabled, physical group numbers will be omitted from the ``.msh`` file.
+
+The Gmsh ``.msh`` file format is documented in Section 9.1 of the user manual `<https://web.mit.edu/gmsh_v3.0.1/gmsh.pdf>`_. ::
 
   $MeshFormat
   2.2 0 8
