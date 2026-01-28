@@ -81,10 +81,10 @@ The Gmsh ``.msh`` file format is documented in Section 9.1 of the user manual `<
 MeshFormat保持不变。PhysicalNames中定义了4个物理定义，其中3个边界和1个区域，首先给出物理定义个数为4，之后到结束关键字，第1列是维数，第2列是编号，例如farfield、sphere_a和sphere_b的维数是2，domain的维数是3。Elements中定义了边界面网格单元和体网格单元，首先给出单元个数为11317，之后到结束关键字，第2列是单元类型，例如21为10节点3阶三角形单元，29为20节点3阶四面体单元，可以在106页和107页找到，第4列对应了PhysicalNames中的编号，第5列为网格单元集合编号，集合编号按照点、线、面、实体分类编号，spheres.msh例子中有三个面，编号分别为1、2、3，有一个实体，编号为3。整个文件可以用Gmsh图形用户界面操作获得，需要选择保存成msh格式，再次选择Version 2 ASCII，目前Gmsh有新的网格格式Version 4 ASCII。
 
 ==========================
-配置文件
+Configuration Format
 ==========================
 
-求解器：
+Solvers:
 
 * Eigenmode
 * Driven
@@ -92,7 +92,7 @@ MeshFormat保持不变。PhysicalNames中定义了4个物理定义，其中3个�
 * Electrostatic
 * Magnetostatic
 
-材料：
+Materials:
 
 * Permeability
 * Permittivity
@@ -101,7 +101,7 @@ MeshFormat保持不变。PhysicalNames中定义了4个物理定义，其中3个�
 * LondonDepth
 * MaterialAxes
   
-边界条件：
+Boundary Conditions:
 
 * **PEC** ， **理想电导体边界** ，zero tangential electric field，静磁、频域、时域
 * **PMC** ， **理想磁导体边界** ，zero tangential magnetic field，静磁、频域、时域
