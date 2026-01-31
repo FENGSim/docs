@@ -4,22 +4,22 @@ Build and Install
 
 * To clone FENGSim: ::
   
-    git clone https://github.com/OpenDigitalTwin-Dev/FENGSim.git
+    git clone https://github.com/FENGSim/FENGSim.git
 
 * To clone MultiX: ::
   
     cd FENGSim/toolkit
-    git clone https://github.com/OpenDigitalTwin-Dev/MultiX.git
+    git clone https://github.com/FENGSim/MultiX.git
 
 * To clone NLA: ::
   
     cd FENGSim/toolkit
-    git clone https://github.com/OpenDigitalTwin-Dev/NLA.git
+    git clone https://github.com/FENGSim/NLA.git
   
 * To clone CEM: ::
   
     cd FENGSim/toolkit
-    git clone https://github.com/OpenDigitalTwin-Dev/CEM.git
+    git clone https://github.com/FENGSim/CEM.git
 
 * To compile and install ALE: ::
   
