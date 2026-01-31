@@ -112,18 +112,40 @@ Boundary Conditions:
 from .xml to .json
 --------------------
 
-在 ``FENGSim/starter/palace/examples/spheres/`` 路径下有两个python脚本，分别是xml2json.py和xml2json2.py，
-xml2json.py是原封不动将xml中字典格式转换为json，xml2json2.py是将xml中网格组名称去掉后转换为json。
-运行xml2json2.py，会要求从命令行输入xml文件名称和网格文件名称，名称不用输入后缀名，网格文件默认保存在 ``FENGSim/starter/palace/examples/spheres/mesh`` 路径下，
-运行结果如下图，并生成data3.json文件。
+To convert an .xml dictionary file to .json format: ::
 
-.. image:: fig/palace_2.png
-   :scale: 50 %
-   :alt: alternate text
-   :align: center
+  python3 xml2json.py
+  emacs data2.json
 
-在 ``FENGSim/starter/palace/examples/spheres/`` 路径下有两个例子。
-一个是原始Palace给的电容矩阵例子，xml和msh文件名称分别为configure_spheres.xml和spheres.msh，也可以用spheres2.msh。生成的data3.json和sphere.json区别是，data3.json是一阶单元，sphere.json是三阶单元。sphere.msh和sphere2.msh区别是，sphere.msh是三阶单元网格文件，sphere2.msh是一阶单元网格文件。这个例子中用了Ground和Terminal的边界条件。另外一个是自定义的例子，xml和msh文件名称分别为configure_ex_3d.xml和ex_3d.msh，这个例子中测试了Ground、Terminal、ZeroCharge三种边界条件。这两个例子测试了xml2json2.py。
+To convert .xml to .json for a third-order example with ground and terminal b.c.: ::
+
+  python3 xml2json2.py
+  input .xml: configure_spheres
+  .xml is configure_spheres.xml
+  input .msh: spheres
+  .msh is mesh/spheres.msh
+  ./../../../../toolkit/CEM/palace/palace/build/palace-x86_64.bin data3.json
+  paraview postpro/paraview/electrostatic/electrostatic.pvd &
+
+To convert .xml to .json for a first-order example with ground and terminal b.c.: ::
+  
+  python3 xml2json2.py
+  input .xml: configure_spheres
+  .xml is configure_spheres.xml
+  input .msh: spheres2
+  .msh is mesh/spheres2.msh
+  ./../../../../toolkit/CEM/palace/palace/build/palace-x86_64.bin data3.json
+  paraview postpro/paraview/electrostatic/electrostatic.pvd &
+
+To convert .xml to .json for a first-order example with ground, terminal and zerocharge b.c.: ::
+  
+  python3 xml2json2.py
+  input .xml: configure_ex_3d
+  .xml is configure_spheres.xml
+  input .msh: ex_3d
+  .msh is mesh/ex_3d.msh
+  ./../../../../toolkit/CEM/palace/palace/build/palace-x86_64.bin data3.json
+  paraview postpro/paraview/electrostatic/electrostatic.pvd &
 
 .. image:: fig/palace_3.png
    :scale: 50 %
