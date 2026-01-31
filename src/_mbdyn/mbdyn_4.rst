@@ -3,23 +3,16 @@ Pre/Post-Processing
 **********************
 
 =========================
-前处理文件
+UR3 Robot Arm
 =========================
 
-前处理文件为.mbd配置文件和.stl几何模型文件，对Universal Robot公司的UR3机械臂，.stl几何模型文件、原始cad文件和UR3E尺寸详细文档都在 ``FENGSim/starter/mbdyn/robot/`` 路径下
-，这里注意原始cad文件和UR3E尺寸详细文档中有一个尺寸是对不上的。
+Configuration files:
 
-可以在 ``FENGSim/starter/mbdyn/robot/robot_arm.mbd`` 中设置5个关节角度约束。UR3机械臂6关节如下图，最后一个关节由于无执行端先忽略。
+* ``FENGSim/starter/mbdyn/robot/robot_arm.mbd``
 
-.. image:: fig/mbdyn_2.png
-   :width: 200
-   :alt: alternate text
-   :align: center
+This example is for a 6-dof robot arm, though without the end effector, the final dof is disregarded.
 
-在 ``FENGSim/starter/mbdyn/robot/robot_arm.mbd`` 中关节角度通过约束函数定义，如下内容中的scalar function。
-scalar function是和时间相关的函数，关节角度可以随着时间变化。
-
-将scalar function简化成固定角度，输入5个固定值，计算时长为2，对时间点2进行角度约束，对时间点1进行约束计算会不收敛。 ::
+To define angle constraints using time-dependent scalar funtions in ``robot_arm.mbd``: ::
 
   #-----------------------------------------------------------------------------
   # Scalar Functions 
@@ -53,19 +46,27 @@ scalar function是和时间相关的函数，关节角度可以随着时间变�
       1.0, 0.0,
       2.0, pi;
 
---------------------
-UR3路径和轨迹规划
---------------------
+* Line 7: the first number ``2.0`` is a time step and the second number ``-1./2.*pi`` is an angle value.
 
-在 ``FENGSim/starter/mbdyn/robot/ur3.traj`` 文件中保存了路径规划和轨迹规划，按照线段进行保存，线段由两端顶点定义，每个线段定义了末端执行器姿态和速度。
+Geometry files (base path:``FENGSim/starter/mbdyn/robot/``):
 
-=========================
-后处理文件
-=========================
+* .stp file: ``UR3.STEP``
+* .stl files: ``down.stl``, ``hand.stl``, ``stage1.stl``, ``stage2.stl``, ``upper.stl``, ``wrist.stl``
+* .traj files: ``ur3.traj``, line segments with the pose and velocity values
+* UR3E technical file: ``ur3e_e-series_datasheets_web.pdf``
+  
+The parameter (``131.05mm``) shown in the figure below from ``ur3e_e-series_datasheets_web.pdf`` does not match the corresponding one (``110.4mm``) in ``UR3.STEP``.
 
-`<https://github.com/mmorandi/MBDyn-web/raw/main/userfiles/documents/tutorials.pdf>`_ 中第2.1节中介绍了结果文件格式，尤其是mov，如下。
+.. image:: fig/mbdyn_2.png
+   :width: 200
+   :alt: alternate text
+   :align: center
+	   
+Results:
 
-The second file (mov) will contain Nnodes by Ntimesteps lines formatted as:
+* ``.mov`` files: ``FENGSim/starter/mbdyn/robot/robot_arm.mov``
+  
+More details for ``.mov`` format in Section 2.1 of `<https://github.com/mmorandi/MBDyn-web/raw/main/userfiles/documents/tutorials.pdf>`_ :
 
 * the node label
 * the three coordinates of the position of the node
