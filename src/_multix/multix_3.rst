@@ -10,24 +10,30 @@ To run MultiX: ::
   ./multix
 
 ========================
-ALE
+Extreme Mechanics
 ========================
+
+-------------------------
+ALE
+-------------------------
+
 .. image:: fig/ale.gif
    :height: 400px
    :alt: alternate text
    :align: center
 
-========================
-Assemble
-========================
+=============================
+Complex Assembled Structure
+=============================
+
 .. image:: fig/modal_mpc.gif
    :height: 200px
    :alt: alternate text
    :align: center
 
-========================
+--------------------------
 Electrodynamics
-========================
+--------------------------
 
 To run the example: ::
 
@@ -40,9 +46,10 @@ To run the example: ::
    :alt: alternate text
    :align: center
 	   
-========================
-Others
-========================
+===================================================
+Multi-phase, Multi-component, Multi-scale Fluid
+===================================================
+
 We will re-implement the following MFEM topology optimization example using MultiX.
 
 .. image:: fig/topo.gif
