@@ -29,6 +29,7 @@ To generate the ``spheres.msh`` mesh file using Gmsh: ::
   cd FENGSim/starter/palace/examples/spheres/mesh
   gmsh spheres.geo -3 -o "spheres2.msh" -format msh2
 
+The format option ``msh2`` is used for the Version 2 ASCII format.
 If the mesh file is exported using Gmsh GUI, do not select the option "Save all elements".
 If this option is enabled, physical group numbers will be omitted from the ``.msh`` file.
 
@@ -48,37 +49,27 @@ The Gmsh ``.msh`` file format is documented in Section 9.1 of the user manual `<
   48882
   1 4.592425496802574e-15 -1.124819836996393e-30 75
   2 4.592425496802574e-15 -1.124819836996393e-30 -75
-  3 -2.5 0 1
-  4 -2.5 0 -1
-  5 2.5 0 2
-  6 2.5 0 -2
   .......
   $EndNodes
   $Elements
   11317
   1 21 2 2 1 2 234 225 295 296 297 298 299 300 301
   2 21 2 2 1 127 227 129 302 303 304 305 306 307 308
-  3 21 2 2 1 175 213 184 309 310 311 312 313 314 315
-  4 21 2 2 1 238 243 183 316 317 318 319 320 321 322
   .......
   437 21 2 3 2 2020 3 2093 2112 2113 2114 2115 2116 2117 2118
   438 21 2 3 2 2053 2078 2079 2119 2120 2121 2122 2123 2124 2125
-  439 21 2 3 2 2078 2086 2102 2126 2127 2128 2129 2130 2131 2132
-  440 21 2 3 2 2086 2075 2102 2133 2134 2135 2136 2129 2128 2137
   .......
   645 21 2 4 3 2961 2958 2997 3021 3022 3023 3024 3025 3026 3027
   646 21 2 4 3 2944 2941 2995 3028 3029 3030 3031 3032 3033 3034
-  647 21 2 4 3 2946 2945 2977 3035 3036 3037 3038 3039 3040 3041
-  648 21 2 4 3 2936 2945 2946 3042 3043 3036 3035 3044 3045 3046
   .......
   845 29 2 1 3 3805 3806 3807 3808 5287 5288 5289 5290 5291 5292 5293 5294 5295 5296 5297 5298 5299 5300 5301 5302
   846 29 2 1 3 3809 3810 3811 2992 5303 5304 5305 5306 5307 5308 5309 5310 5311 5312 5313 5314 5315 5316 5317 5318
-  847 29 2 1 3 3812 3813 3814 3811 5319 5320 5321 5322 5323 5324 5325 5326 5327 5328 5329 5330 5331 5332 5333 5334
-  848 29 2 1 3 3815 3816 3817 3818 5335 5336 5337 5338 5339 5340 5341 5342 5343 5344 5345 5346 5347 5348 5349 5350
   .......
   $EndElements
 
-MeshFormat保持不变。PhysicalNames中定义了4个物理定义，其中3个边界和1个区域，首先给出物理定义个数为4，之后到结束关键字，第1列是维数，第2列是编号，例如farfield、sphere_a和sphere_b的维数是2，domain的维数是3。Elements中定义了边界面网格单元和体网格单元，首先给出单元个数为11317，之后到结束关键字，第2列是单元类型，例如21为10节点3阶三角形单元，29为20节点3阶四面体单元，可以在106页和107页找到，第4列对应了PhysicalNames中的编号，第5列为网格单元集合编号，集合编号按照点、线、面、实体分类编号，spheres.msh例子中有三个面，编号分别为1、2、3，有一个实体，编号为3。整个文件可以用Gmsh图形用户界面操作获得，需要选择保存成msh格式，再次选择Version 2 ASCII，目前Gmsh有新的网格格式Version 4 ASCII。
+* Line 6: The first number ``2`` is the dimension and the second number ``3`` is the physical group number.
+* Line 19: The second number ``21`` is the element type. The third number is the tag number (for how many tags).
+  The fourth and fifth numbers are the tags for physical groups and geometrical groups.
 
 ==========================
 Configuration Format
@@ -103,29 +94,22 @@ Materials:
   
 Boundary Conditions:
 
-* **PEC** ， **理想电导体边界** ，zero tangential electric field，静磁、频域、时域
-* **PMC** ， **理想磁导体边界** ，zero tangential magnetic field，静磁、频域、时域
-* Impedance，relates the tangential electric and magnetic fields on the boundary，模态、频域、时域
-* Absorbing，模态、频域、时域
-* Conductivity，频域
-* LumpedPort，模态、频域、时域
-* WavePort，频域
-* WavePortPEC，WavePort扩展
-* **SurfaceCurrent** ， **表面电流** ，静磁、频域、时域
-* **Ground** ， **接地边界** ，zero voltage, 静电
-* **ZeroCharge** ， **零电荷边界** ，zero charge，静电
-* **Terminal** ， **端口** ，静电
+* PEC: zero tangential electric field used for electrostatics, frequency domain and time domain
+* PMC: zero tangential magnetic field used for  magnetostatics, frequency domain and time domain
+* Impedance: relates the tangential electric and magnetic fields on the boundary used for eigenmode, frequency domain and time domain
+* Absorbing: eigenmode, frequency domain, time domain
+* Conductivity: frequency domain
+* LumpedPort: eigenmode, frequency domain, time domain
+* WavePort: frequency domain
+* WavePortPEC: from WavePort
+* SurfaceCurrent: magnetostatics, frequency doamin, time domain
+* Ground: zero voltage used for electrostatics
+* ZeroCharge: zero charge used for electrostatics
+* Terminal: electroststics
 * Periodic
 
-
-
-==========================
-格式转换
-==========================
-
-
 --------------------
-xml转json
+from .xml to .json
 --------------------
 
 在 ``FENGSim/starter/palace/examples/spheres/`` 路径下有两个python脚本，分别是xml2json.py和xml2json2.py，
