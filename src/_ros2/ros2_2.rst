@@ -1,8 +1,5 @@
-
-
-
 **********************
-编译安装
+Build and Install
 **********************
 
 按照如下操作在FENGSim中编译ROS2、MoveIt2和MoveIt2_Tutorials。
