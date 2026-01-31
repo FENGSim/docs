@@ -29,17 +29,16 @@ Build and Install
 Key tools and work flow for compiling ROS2, MoveIt2 and MoveIt2_Tutorials: 
 
 * ROS packages: `<http://packages.ros.org/>`_
-* Toolset (``ros-dev-tools``): ``Vsctool``, ``rosdep``, ``colcon``
+* Toolset (``ros-dev-tools``): `<http://packages.ros.org/ros2/ubuntu/pool/main/r/ros-dev-tools/>`_ ``ros-dev-tools`` includes ``Vsctool``, ``rosdep`` and ``colcon``. 
 * Source code management from any repositories (``Vcstool``): `<https://github.com/dirk-thomas/vcstool>`_
 * Dependency database (``rosdistro``): `<https://github.com/ros/rosdistro/tree/master>`_
-* Dependency installer (``rosdep``):
+* Dependency installer (``rosdep``): `<http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-rosdep/>`_.
 * Build tool (``colcon``): `<https://colcon.readthedocs.io/en/released/>`_
 
-The ``rosdep`` package can be downloaded from `<http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-rosdep/>`_.  
 To resolve the download failure when running ``rosdep init``:
 
-* modify the path in ``FENGSim/toolkit/DAE/ros2/ros2/20-default.list``
-* modify the path in ``FENGSim/toolkit/DAE/ros2/ros2/__init__.py``
+* Modify the path in ``FENGSim/toolkit/DAE/ros2/ros2/20-default.list``
+* Modify the path in ``FENGSim/toolkit/DAE/ros2/ros2/__init__.py``
 
 
   
