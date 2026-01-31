@@ -2,7 +2,7 @@
 Examples
 **********************
 
-运行以下命令： ::
+To run an example: ::
 
   cd FENGSim/toolkit/DAE/ros2
   source ros2/ros2_jazzy/install/setup.bash
