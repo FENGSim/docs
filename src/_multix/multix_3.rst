@@ -46,9 +46,9 @@ To run the example: ::
    :alt: alternate text
    :align: center
 	   
-===================================================
-Multi-phase, Multi-component, Multi-scale Fluid
-===================================================
+=========================================================
+Multi-phase, Multi-component, Multi-scale Fluid Dynamics
+=========================================================
 
 We will re-implement the following MFEM topology optimization example using MultiX.
 
