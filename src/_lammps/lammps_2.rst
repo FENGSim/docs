@@ -1,26 +1,17 @@
-
 **********************
-编译安装
+Build and Install
 **********************
 
-按照如下操作在FENGSim中编译安装LAMMPS。
-
-* 首先克隆FENGSim。
-
-.. code-block:: bash
+To clone FENGSim: ::
   
-    git clone https://github.com/OpenDigitalTwin-Dev/FENGSim.git
-  
-* 再将Particles克隆到 ``FENGSim/toolkit`` 路径下。
+    git clone https://github.com/FENGSim/FENGSim.git
 
-.. code-block:: bash
+To clone Particles: ::
   
     git submodule init
     git submodule update toolkit/Particles
     
-* 运行以下命令，在Ubuntu24.04下编译LAMMPS。 
-
-.. code-block:: bash
-		
+To compile and install LAMMPS: ::
+  
     cd FENGSim/toolkit/Particles/lammps
     ./install   
