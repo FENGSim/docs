@@ -1,11 +1,8 @@
 **********************
-算例测试
+Examples
 **********************
 
-对 ``FENGSim/starter/palabos/boussinesqThermal2d`` 路径下的 ``CMakeLists.txt``
-里的Palabos路径进行了修改，并创建 ``tmp`` 目录。
-
-.. code-block:: bash
+To run the ``boussinesqThermal2d`` example: ::
 
    cd FENGSim/starter/palabos/boussinesqThermal2d
    ./install
@@ -16,7 +13,7 @@
    :alt: alternate text
    :align: center
 
-.. code-block:: bash
+To run the ``cavity2d`` example: ::
 
    cd FENGSim/starter/palabos/cavity2d
    ./install

@@ -1,6 +1,7 @@
 **********************
-参考资料
+References
 **********************
 
-GitLab网址为 `<https://gitlab.com/unigespc/palabos>`_ ，使用说明 ``Palabos_UserGuide.pdf`` 保存在 ``FENGSim/starter/palabos/`` 路径下，
-Doxygen程序文档链接为 `<https://unigespc.gitlab.io/palabos/docs/html/>`_ 。
+* GitLab: `<https://gitlab.com/unigespc/palabos>`_
+* User manual: ``FENGSim/starter/palabos/Palabos_UserGuide.pdf``
+* Doxygen: `<https://unigespc.gitlab.io/palabos/docs/html/>`_
