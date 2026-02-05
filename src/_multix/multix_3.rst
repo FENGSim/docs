@@ -26,6 +26,10 @@ ALE
 Complex Assembled Structure
 =============================
 
+--------------------------
+Modal
+--------------------------
+
 .. image:: fig/modal_mpc.gif
    :height: 200px
    :alt: alternate text
