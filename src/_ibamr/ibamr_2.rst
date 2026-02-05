@@ -1,26 +1,18 @@
 **********************
-编译安装
+Build and Install
 **********************
 
-按照如下操作在FENGSim中编译安装IBAMR。
-
-* 首先克隆FENGSim。
-
-.. code-block:: bash
+* To clone FENGSim: ::
   
-    git clone https://github.com/OpenDigitalTwin-Dev/FENGSim.git
+    git clone https://github.com/FENGSim/FENGSim.git
   
-* 再将CFD和NLA克隆到 ``FENGSim/toolkit`` 路径下。
-
-.. code-block:: bash
+* To clone CFD and NLA: ::
   
     git submodule init
     git submodule update toolkit/CFD
     git submodule update toolkit/NLA
     
-* 运行以下命令，在Ubuntu24.04下编译IBAMR。 
-
-.. code-block:: bash
+* To compile and install: ::
 		
     cd FENGSim/toolkit/CFD/ibamr
     ./install   

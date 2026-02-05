@@ -1,12 +1,8 @@
 **********************
-算例测试
+Examples
 **********************
 
-===========
-算例一
-===========
-
-在 ``FENGSim/starter/ibamr/IB_ex2`` 路径下有一个圆柱绕流例子，运行如下命令。 ::
+To run the flow around a circular cylinder example: ::
   
   cd FENGSim/starter/ibamr/IB_ex2
   ./install
@@ -32,4 +28,4 @@
    :alt: alternate text
    :align: center
 
-这里需要注意结果要用VisIt软件打开。
+The results can be visualized in VisIt.
