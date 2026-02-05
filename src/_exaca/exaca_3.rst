@@ -1,12 +1,8 @@
 **********************
-算例测试
+Examples
 **********************
 
-===========
-算例一
-===========
-
-在 ``FENGSim/starter/exaca/ex_1`` 路径下有一个定向凝固例子，运行如下命令。 ::
+To run a directional solidification example: ::
   
   cd FENGSim/starter/exaca/ex_1
   ./run
