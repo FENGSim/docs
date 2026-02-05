@@ -1,5 +1,5 @@
 **********************
-参考资料
+References
 **********************
 
-Maxima网站为 `<https://maxima.sourceforge.io/>`_ ，上面有大量的介绍资料。
+* Website: `<https://maxima.sourceforge.io/>`_

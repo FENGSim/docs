@@ -1,12 +1,8 @@
 **********************
-算例测试
+Examples
 **********************
 
-===========
-算例一
-===========
-
-在 ``FENGSim/starter/r`` 路径下有一个SPC例子，运行如下命令。 ::
+To run the SPC example: ::
   
   cd FENGSim/starter/r
   ./run
