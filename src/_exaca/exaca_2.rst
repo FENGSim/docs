@@ -1,5 +1,5 @@
 **********************
-Build and Instal
+Build and Install
 **********************
 
 * To clone FENGSim: ::
