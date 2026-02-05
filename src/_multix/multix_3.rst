@@ -46,9 +46,9 @@ To run the example: ::
    :alt: alternate text
    :align: center
 	   
-=========================================================
-Multi-phase, Multi-component, Multi-scale Fluid Dynamics
-=========================================================
+==============================================================
+Multi-Phase, Multi-Component Thermo-Hydro-Mechanical Systems
+==============================================================
 
 We will re-implement the following MFEM topology optimization example using MultiX.
 
@@ -57,3 +57,6 @@ We will re-implement the following MFEM topology optimization example using Mult
    :alt: alternate text
    :align: center
 	   
+======================================================================================================================================================
+Multifunctional Properties of Composite Materials: Mechanical Performance, Electromagnetic Response, and Radiation Energy Deposition Characteristics
+======================================================================================================================================================
