@@ -1,8 +1,8 @@
 **********************
-编译安装
+Build and Install
 **********************
 
-.. code-block:: bash
+To compile and install: ::
 
    cd FENGSim/toolkit/Particles/dualsphysics/
    ./install
