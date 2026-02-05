@@ -1,12 +1,8 @@
 **********************
-算例测试
+Examples
 **********************
 
-===========
-算例一
-===========
-
-在 ``FENGSim/starter/damask/grid`` 路径下有一个grid求解器例子，运行如下命令。 ::
+To run the traction example with the grid solver: ::
   
     cd FENGSim/starter/damask/grid
     ./run
