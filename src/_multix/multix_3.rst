@@ -22,6 +22,15 @@ ALE
    :alt: alternate text
    :align: center
 
+-------------------------
+MPM
+-------------------------
+
+.. image:: fig/mpm.gif
+   :height: 300px
+   :alt: alternate text
+   :align: center
+
 =============================
 Complex Assembled Structure
 =============================
