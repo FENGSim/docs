@@ -36,7 +36,7 @@ Complex Assembled Structure
 =============================
 
 --------------------------
-Modal Problems
+Modal Analysis
 --------------------------
 
 .. image:: fig/modal_mpc.gif
