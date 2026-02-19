@@ -1,0 +1,8 @@
+**********************
+References
+**********************
+
+* Website: `<https://doc.qt.io/qt-6/>`_
+* Qt download: `<https://download.qt.io/archive/qt/6.10/6.10.2/>`_
+* Qt Creator download: `<https://download.qt.io/archive/qtcreator/10.0/10.0.2/installer_source/linux_x64/>`_
+

@@ -1,0 +1,10 @@
+**********************
+Examples
+**********************
+
+To run Qt Creator: ::
+  
+  cd FENGSim/toolkit/Tools/qtcreator-10.0.2
+  ./install
+  ./bin/qtcreator &
+

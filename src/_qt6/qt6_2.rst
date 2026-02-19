@@ -1,0 +1,15 @@
+**********************
+Build and Install
+**********************
+
+
+* To clone FENGSim: ::
+  
+    git clone https://github.com/FENGSim/FENGSim.git
+      
+* To compile and install: ::
+		
+    cd FENGSim/toolkit/Tools/qt-6.10.2
+    ./install
+
+For pre/post-processing, only ``qtbase``, ``qtshadertools`` and ``qtdeclarative`` are required.

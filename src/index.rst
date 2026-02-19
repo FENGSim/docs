@@ -39,6 +39,7 @@ This manual includes the references, build and install, examples, pre/post-proce
    clipper
    maxima
    r
+   qt6
    sphinx
 
 

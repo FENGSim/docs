@@ -1,0 +1,18 @@
+**********************
+Build and Install
+**********************
+
+
+* To clone FENGSim: ::
+  
+    git clone https://github.com/FENGSim/FENGSim.git
+  
+* To clone PS: ::
+  
+    git submodule init
+    git submodule update toolkit/PS
+    
+* To compile and install R: ::
+		
+    cd FENGSim/toolkit/PS/r
+    ./install   
