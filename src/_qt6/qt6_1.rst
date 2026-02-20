@@ -2,7 +2,10 @@
 References
 **********************
 
-* Website: `<https://doc.qt.io/qt-6/>`_
-* Qt download: `<https://download.qt.io/archive/qt/6.10/6.10.2/>`_
-* Qt Creator download: `<https://download.qt.io/archive/qtcreator/10.0/10.0.2/installer_source/linux_x64/>`_
+* User Manual: `<https://doc.qt.io/qt-6/>`_
+* GitHub: `<https://github.com/qt>`_
+* Qt Base: `<https://github.com/qt/qtbase>`_
+* Qt Declarative: `<https://github.com/qt/qtdeclarative>`_
+* Qt Download: `<https://download.qt.io/archive/qt/6.10/6.10.2/>`_
+* Qt Creator Download: `<https://download.qt.io/archive/qtcreator/10.0/10.0.2/installer_source/linux_x64/>`_
 
