@@ -13,3 +13,5 @@ Build and Install
     ./install
 
 For pre/post-processing, only ``qtbase``, ``qtshadertools`` and ``qtdeclarative`` are required.
+The base repository ``qtbase`` contains the ``configure`` scripts, while
+the ``qt-configure-module`` scripts are used for ``qtshadertools`` and ``qtdeclarative``.
