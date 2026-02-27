@@ -40,6 +40,7 @@ This manual includes the references, build and install, examples, pre/post-proce
    maxima
    r
    qt6
+   julia
    sphinx
 
 
