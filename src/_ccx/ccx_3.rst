@@ -76,3 +76,6 @@ The solver outputs the frequency data to the ``modal.dat`` file in ``FENGSim/sta
 | .. image:: fig/modal/blade_7.gif   | .. image:: fig/modal/blade_8.gif   | .. image:: fig/modal/blade_9.gif  |
 |    :width: 200px                   |    :width: 200px                   |    :width: 200px                  |
 +------------------------------------+------------------------------------+-----------------------------------+
+| .. image:: fig/modal/blade_10.gif  | .. image:: fig/modal/blade_11.gif  | .. image:: fig/modal/blade_12.gif |
+|    :width: 200px                   |    :width: 200px                   |    :width: 200px                  |
++------------------------------------+------------------------------------+-----------------------------------+
