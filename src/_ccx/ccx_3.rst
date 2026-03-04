@@ -79,3 +79,17 @@ The solver outputs the frequency data to the ``modal.dat`` file in ``FENGSim/sta
 | .. image:: fig/modal/blade_10.gif  | .. image:: fig/modal/blade_11.gif  | .. image:: fig/modal/blade_12.gif |
 |    :width: 200px                   |    :width: 200px                   |    :width: 200px                  |
 +------------------------------------+------------------------------------+-----------------------------------+
+
++-------------------------------------+-------------------------------------+-------------------------------------+
+| .. image:: fig/modal/oiltank_1.gif  | .. image:: fig/modal/oiltank_2.gif  | .. image:: fig/modal/oiltank_3.gif  |
+|    :width: 200px                    |    :width: 200px                    |    :width: 200px                    |
++-------------------------------------+-------------------------------------+-------------------------------------+
+| .. image:: fig/modal/oiltank_4.gif  | .. image:: fig/modal/oiltank_5.gif  | .. image:: fig/modal/oiltank_6.gif  |
+|    :width: 200px                    |    :width: 200px                    |    :width: 200px                    |
++-------------------------------------+-------------------------------------+-------------------------------------+
+| .. image:: fig/modal/oiltank_7.gif  | .. image:: fig/modal/oiltank_8.gif  | .. image:: fig/modal/oiltank_9.gif  |
+|    :width: 200px                    |    :width: 200px                    |    :width: 200px                    |
++-------------------------------------+-------------------------------------+-------------------------------------+
+| .. image:: fig/modal/oiltank_10.gif | .. image:: fig/modal/oiltank_11.gif | .. image:: fig/modal/oiltank_12.gif |
+|    :width: 200px                    |    :width: 200px                    |    :width: 200px                    |
++-------------------------------------+-------------------------------------+-------------------------------------+
