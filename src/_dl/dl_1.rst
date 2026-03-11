@@ -2,4 +2,4 @@
 References
 **********************
 
-`<https://d2l.ai/>`_
+* Overview: `<https://d2l.ai/>`_
