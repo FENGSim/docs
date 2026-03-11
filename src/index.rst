@@ -41,7 +41,7 @@ This manual includes the references, build and install, examples, pre/post-proce
    r
    qt6
    julia
-   llm
+   dl
    sphinx
 
 
