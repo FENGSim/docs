@@ -2,19 +2,24 @@
 Examples
 **********************
 
+==================================
+Use an LLM to Control Software
+==================================
+
+
 The LLM generates configuration files, script commands, and codes in Python/Julia, C++/C, and domain-specific languages to control the operational flow.
 
 * In a finite element solver, the main workflow is fixed, but many options are selected at each step.
 * Unlike the fixed solver core, pre/post-processing workflows are dynamic and highly customizable.
-
+  
 =========================== ================================= ======================================================== =========================================
 Type                               Flow Control                    Readability                                           Examples
 =========================== ================================= ======================================================== =========================================
-Configuration Files            Fixed                            Easy                                                    Palace (.msh and .json)
-Script Commands                Fixed with selectable steps      Simple                                                  Gmsh, LAMMPS/Kalmelo, Ansys APDL
-Python/Julia                   Dynamic                          Moderate coding capability                              Gmsh (.jl and .py)
-C++/C                          Dynamic                          Advanced coding capability                              Gmsh, OCCT, VTK
-Domain-Specific Languages      Dynamic                          Closed to human language                                FEniCS (UFL), KittyCAD/Zoo (KCL)
+Configuration Files            Fixed (all steps)              Easy                                                     Palace (.msh and `.json <https://github.com/FENGSim/FENGSim/blob/main/starter/palace/examples/spheres/spheres.json>`_)
+Script Commands                Fixed (selectable steps)       Simple                                                   `Gmsh <https://github.com/FENGSim/FENGSim/blob/main/starter/palace/examples/spheres/mesh/spheres.geo>`_, `LAMMPS/Kalmelo <https://github.com/FENGSim/FENGSim/blob/main/starter/karamelo/cutting/cutting_tl.mpm>`_, Ansys APDL
+Python/Julia                   Dynamic (new flow)             Moderate coding capability                               Gmsh (`.jl <https://github.com/FENGSim/FENGSim/blob/main/starter/palace/examples/spheres/mesh/mesh.jl>`_ and .py)
+C++/C                          Dynamic (new flow)             Advanced coding capability                               Gmsh, OCCT, VTK
+Domain-Specific Languages      Dynamic (new flow)             Closed to human language                                 `FEniCS (UFL) <https://github.com/FEniCS/ufl/blob/main/demo/Heat.py>`_, KittyCAD/Zoo (KCL)
 =========================== ================================= ======================================================== =========================================
 
-                        
+For LLM-driven software flow control, generating Python or Julia scripts is the recommended approach.
