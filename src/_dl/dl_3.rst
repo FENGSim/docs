@@ -22,4 +22,12 @@ C++/C                          Dynamic (new flow)             Advanced coding ca
 Domain-Specific Languages      Dynamic (new flow)             Closed to human language                                 `FEniCS (UFL) <https://github.com/FEniCS/ufl/blob/main/demo/Heat.py>`_, KittyCAD/Zoo (KCL)
 =========================== ================================= ======================================================== =========================================
 
-For LLM-driven software flow control, generating Python or Julia scripts is the recommended approach.
+For LLM-driven software flow control, generating Python or Julia scripts is the recommended approach. Input the following content into DeepSeek: ::
+
+  Write a Julia script using Gmsh to create three spheres:
+  one large sphere centered at (0, 0, 0) with radius 1,
+  and two small spheres centered at (0.2, 0, 0) and (-0.2, 0, 0) respectively, each with radius 0.1.
+  Then, subtract the two small spheres from the large sphere and generate the mesh.
+
+The generated Julia script is available at this `link <https://github.com/FENGSim/FENGSim/blob/main/starter/DeepLearning/llm/test.jl>`_.
+
