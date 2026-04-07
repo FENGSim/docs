@@ -37,11 +37,12 @@ This manual includes the references, build and install, examples, pre/post-proce
    ngspice
    gmsh
    clipper
+   pcl
    maxima
    r
+   dl
    qt6
    julia
-   dl
    sphinx
 
 
