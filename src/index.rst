@@ -41,6 +41,8 @@ This manual includes the references, build and install, examples, pre/post-proce
    maxima
    r
    dl
+   omniverse
+   isaac
    qt6
    julia
    sphinx
