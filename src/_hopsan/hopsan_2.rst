@@ -16,4 +16,8 @@ Build and Install
     cd FENGSim/toolkit/DAE/hopsan
     ./install   
 
+.. image:: fig/hopsan_1.png
+   :scale: 50 %
+   :alt: alternate text
+   :align: center    
     
