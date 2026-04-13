@@ -2,6 +2,7 @@
 References
 **********************
 
-* Version: 1.11 or 1.15
-* Website: `<https://pointclouds.org/>`_
-* Tutorials: `<https://pcl.readthedocs.io/projects/tutorials/en/master/>`_
+* `Reinforcement Learning Tutorials <https://hrl.boyuai.com/>`_
+* `GitHub <https://isaac-sim.github.io/IsaacLab/main/index.html/>`_
+
+  
