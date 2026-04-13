@@ -2,6 +2,6 @@
 References
 **********************
 
-* `Isaac Lab Documentation <https://isaac-sim.github.io/IsaacLab/main/index.html/>`_
+* `Isaac Lab Documentation <https://isaac-sim.github.io/IsaacLab/main/index.html>`_
 
   
