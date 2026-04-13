@@ -10,5 +10,8 @@ Build and Install
 		
     cd FENGSim/toolkit/Geometry/pcl
     ./install
+
+* To compile and install GDT: ::
+    
     cd FENGSim/starter/GDT
     ./install
