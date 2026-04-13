@@ -23,6 +23,7 @@ This manual includes the references, build and install, examples, pre/post-proce
    palace
    mbdyn
    kdl
+   hopsan
    ros2
    karamelo
    lammps
