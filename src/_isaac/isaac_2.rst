@@ -6,19 +6,15 @@ Build and Install
 Isaac-Sim
 =======================
 
-* To download Isaac-Sim: ::
+* To clone FENGSim: ::
   
-    wget https://downloads.isaacsim.nvidia.com/isaac-sim-standalone-5.1.0-linux-x86_64.zip
+    git clone https://github.com/FENGSim/FENGSim.git
     
-* To run: ::
-		
-    mkdir ~/isaacsim
-    cd ~/Downloads
-    unzip "isaac-sim-standalone-5.1.0-linux-x86_64.zip" -d ~/isaacsim
-    cd ~/isaacsim
-    ./post_install.sh
-    ./isaac-sim.sh
-
+* To run Isaac-Sim: ::
+  
+    cd FENGSim/isaac
+    ./install_isaac_sim
+    
 .. image:: fig/isaacsim.png
    :scale: 40 %
    :alt: alternate text
