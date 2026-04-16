@@ -71,5 +71,5 @@ We will re-implement the following MFEM topology optimization example using Mult
    :align: center
 	   
 ======================================================================================================================================================
-Multifunctional Properties of Composite Materials: Mechanical Performance, Electromagnetic Response, and Radiation Energy Deposition Characteristics
+Multifunctional Properties of Materials: Mechanical Performance, Electromagnetic Response, and Radiation Energy Deposition Characteristics
 ======================================================================================================================================================
