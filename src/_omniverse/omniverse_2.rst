@@ -18,4 +18,9 @@ Kit-CAE
 * To run: ::
 		
     cd kit-cae
-    ./repo.sh launch -n omni.cae.kit 
+    ./repo.sh launch -n omni.cae.kit
+
+.. image:: fig/kit-cae.png
+   :scale: 50 %
+   :alt: alternate text
+   :align: center    
