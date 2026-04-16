@@ -18,3 +18,8 @@ Isaac-Sim
     cd ~/isaacsim
     ./post_install.sh
     ./isaac-sim.sh
+
+.. image:: fig/isaacsim.png
+   :scale: 50 %
+   :alt: alternate text
+   :align: center    
