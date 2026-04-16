@@ -6,20 +6,15 @@ Build and Install
 Kit-CAE
 =======================
 
-* To clone kit-cae: ::
+* To clone FENGSim: ::
   
-    git clone https://github.com/NVIDIA-Omniverse/kit-cae.git
+    git clone https://github.com/FENGSim/FENGSim.git
     
-* To build: ::
-		
-    cd kit-cae
-    ./repo.sh build -r
-
-* To run: ::
-		
-    cd kit-cae
-    ./repo.sh launch -n omni.cae.kit
-
+* To build Kit-CAE: ::
+  
+    cd FENGSim/omniverse
+    ./install_kit_cae
+    
 .. image:: fig/kit-cae.png
    :scale: 40 %
    :alt: alternate text
