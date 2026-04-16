@@ -20,6 +20,6 @@ Isaac-Sim
     ./isaac-sim.sh
 
 .. image:: fig/isaacsim.png
-   :scale: 50 %
+   :scale: 40 %
    :alt: alternate text
    :align: center    

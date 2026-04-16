@@ -21,6 +21,6 @@ Kit-CAE
     ./repo.sh launch -n omni.cae.kit
 
 .. image:: fig/kit-cae.png
-   :scale: 50 %
+   :scale: 40 %
    :alt: alternate text
    :align: center    

@@ -17,7 +17,7 @@ Build and Install
     ./install   
 
 .. image:: fig/hopsan_1.png
-   :scale: 50 %
+   :scale: 40 %
    :alt: alternate text
    :align: center    
     

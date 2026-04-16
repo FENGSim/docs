@@ -10,6 +10,6 @@ To open the GUI: ::
 Then open an example as shown in the figure below.
 
 .. image:: fig/hopsan_2.png
-   :scale: 50 %
+   :scale: 40 %
    :alt: alternate text
    :align: center    
