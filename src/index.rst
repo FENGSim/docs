@@ -39,6 +39,7 @@ This manual includes the references, build and install, examples, pre/post-proce
    gmsh
    clipper
    pcl
+   cura
    maxima
    r
    dl
