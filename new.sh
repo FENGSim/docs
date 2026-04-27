@@ -1,3 +1,4 @@
+unzip src/template.zip -d src/
 cp src/template.rst src/$1.rst
 mkdir src/_$1
 cp src/_template/template_1.rst src/_$1/$1_1.rst
