@@ -2,7 +2,7 @@
 Examples
 **********************
 
-Multix has three couplers: one for large deformation, contact, and friction in fluid-solid/solid-solid problems; one for multiphase-multicomponent fluid; and one for assembly.
+MultiX features three couplers: one for large deformation, contact, and fracture in fluid-solid and solid-solid problems; one for multiphase, multicomponent heat-fluid-solid interactions; and one for assembly.
 
 To run MultiX: ::
 
@@ -36,15 +36,6 @@ Complex Assembled Structure
 =============================
 
 --------------------------
-Modal Analysis
---------------------------
-
-.. image:: fig/modal_mpc.gif
-   :height: 200px
-   :alt: alternate text
-   :align: center
-
---------------------------
 Electrodynamics
 --------------------------
 
@@ -58,6 +49,16 @@ To run the example: ::
    :height: 200px
    :alt: alternate text
    :align: center
+
+--------------------------
+Modal Analysis
+--------------------------
+
+.. image:: fig/modal_mpc.gif
+   :height: 200px
+   :alt: alternate text
+   :align: center
+
 	   
 ==============================================================
 Multi-Phase, Multi-Component Thermo-Hydro-Mechanical Systems
