@@ -49,5 +49,5 @@ To generate mesh files in ``.su2`` format using Gmsh: ::
   cd FENGSim/starter/su2/quickstart
   gmsh test.geo -2 -format msh -save_all
   gmsh test.msh -refine -smooth 10 -save_all -format su2
-  mpirun -np 4 ./../../../toolkit/CFD/install/su2_install/bin/SU2_CFD test.cfg
+  mpirun -np 4 ./../../../toolkit/CFD/install/su2/bin/SU2_CFD test.cfg
   paraview flow.vtu

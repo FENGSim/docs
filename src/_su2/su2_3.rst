@@ -6,7 +6,7 @@ Examples
 To run the quick start example: ::
   
     cd FENGSim/starter/su2/quickstart
-    mpirun -np 4 ./../../../toolkit/CFD/install/su2_install/bin/SU2_CFD inv_NACA0012.cfg
+    mpirun -np 4 ./../../../toolkit/CFD/install/su2/bin/SU2_CFD inv_NACA0012.cfg
     paraview flow.vtu
 
 This version must be run using mpirun on Ubuntu 24.04, otherwise errors will occur.
@@ -20,5 +20,5 @@ Additionally, the ``flow.vtk`` file requires an older version of ParaView (like 
 More examples:
 
 * introductions: `<https://su2code.github.io/tutorials/home/>`_
-* configuration files (``.cfg``) : ``FENGSim/toolkit/CFD/su2/TestCases``
+* configuration files (``.cfg``) : ``FENGSim/toolkit/CFD/su2-8.5.0/TestCases``
 * mesh files (``.su``) : `<https://github.com/su2code/TestCases.git>`_

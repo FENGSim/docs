@@ -14,7 +14,7 @@ Build and Install
   
 * To install SU2: ::
   
-    cd FENGSim/toolkit/CFD/su2
+    cd FENGSim/toolkit/CFD/su2-8.5.0
     ./install
 
 
