@@ -7,6 +7,9 @@ This manual includes the references, build and install, examples, pre/post-proce
 - GitHub: `<https://github.com/FENGSim/FENGSim>`_
 - Website: `<https://fengsim.github.io/>`_.
 
+Version:
+  
+- su2 8.5.0
 
 .. Hidden TOCs
 
