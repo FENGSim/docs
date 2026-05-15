@@ -9,7 +9,7 @@ This manual includes the references, build and install, examples, pre/post-proce
 
 Version:
   
-- su2 8.5.0
+- su2-8.5.0
 
 .. Hidden TOCs
 
