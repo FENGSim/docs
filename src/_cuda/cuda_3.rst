@@ -16,3 +16,4 @@ Compile and run a simple CUDA example: ::
 To check GPU status: ::
 
   nvidia-smi
+  watch -n 0.5 nvidia-smi
