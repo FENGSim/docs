@@ -12,3 +12,7 @@ Compile and run a simple CUDA example: ::
   cmake ..
   make -j4
   ./test
+
+To check GPU status: ::
+
+  nvidia-smi
