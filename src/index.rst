@@ -51,6 +51,7 @@ Version:
    isaac
    qt6
    julia
+   cuda
    sphinx
 
 
