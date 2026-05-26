@@ -64,13 +64,27 @@ Modal Analysis
 Multi-Phase, Multi-Component Thermo-Hydro-Mechanical Systems
 ==============================================================
 
-We will re-implement the following MFEM topology optimization example using MultiX.
+Multi-phase:
 
-.. image:: fig/topo.gif
+.. image:: fig/allencahn.gif
    :height: 200px
    :alt: alternate text
    :align: center
 	   
 ======================================================================================================================================================
-Multifunctional Properties of Materials: Mechanical Performance, Electromagnetic Response, and Radiation Energy Deposition Characteristics
+Multifunctional Properties of Materials
 ======================================================================================================================================================
+
+--------------------------
+Mechanical Performance
+--------------------------
+
+
+--------------------------
+Electromagnetic Response
+--------------------------
+
+
+-----------------------------
+Radiation Energy Deposition
+-----------------------------
