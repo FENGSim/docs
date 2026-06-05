@@ -59,6 +59,15 @@ Modal Analysis
    :alt: alternate text
    :align: center
 
+--------------------------
+Mutibody
+--------------------------
+
+.. image:: fig/2dof.png
+   :height: 200px
+   :alt: alternate text
+   :align: center
+
 	   
 ==============================================================
 Multi-Phase, Multi-Component Thermo-Hydro-Mechanical Systems
