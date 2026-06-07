@@ -74,10 +74,19 @@ Multi-Phase, Multi-Component Thermo-Hydro-Mechanical Systems
 ==============================================================
 
 --------------------------
-Multi-phase
+Multi-Phase
 --------------------------
 
 .. image:: fig/allencahn.gif
+   :height: 200px
+   :alt: alternate text
+   :align: center
+
+--------------------------
+Multi-Component
+--------------------------
+
+.. image:: fig/AkzoNobel.png
    :height: 200px
    :alt: alternate text
    :align: center
