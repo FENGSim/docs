@@ -68,6 +68,11 @@ Mutibody
    :alt: alternate text
    :align: center
 
+.. image:: fig/cartpole.png
+   :height: 200px
+   :alt: alternate text
+   :align: center
+
 	   
 ==============================================================
 Multi-Phase, Multi-Component Thermo-Hydro-Mechanical Systems
