@@ -40,9 +40,9 @@ MPM
 Complex Assembled Structure
 =============================
 
---------------------------
-Electrodynamics
---------------------------
+---------------------------------------------------------
+Prestress Induced by Electrodynamic and Thermal Effects
+---------------------------------------------------------
 
 To run the example: ::
 
@@ -55,9 +55,9 @@ To run the example: ::
    :alt: alternate text
    :align: center
 
---------------------------
-Modal Analysis
---------------------------
+------------------------------
+Assembly and Modal Analysis
+------------------------------
 
 .. image:: fig/modal_mpc.gif
    :height: 200px
