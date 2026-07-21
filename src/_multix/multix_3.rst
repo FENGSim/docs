@@ -36,6 +36,11 @@ MPM
    :alt: alternate text
    :align: center
 
+.. image:: fig/damage.gif
+   :height: 300px
+   :alt: alternate text
+   :align: center
+
 =============================
 Complex Assembled Structure
 =============================
