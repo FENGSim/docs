@@ -9,9 +9,9 @@ Examples
     cd build
     cmake ..
     make -j4
-    ./AMSolver
+    ./multix
 
-Open ``thinwall.stl`` (located in ``FENGSim/start/AM/build/AM/conf/geo/``) and ``slices.vtk`` (located in ``FENGSim/start/AM/build/data/am/``) using ParaView.
+Open ``hole.stl`` (located in ``FENGSim/start/AM/build/AM/conf/geo/``) and ``slices.vtk`` (located in ``FENGSim/start/AM/build/data/vtk/``) using ParaView.
 
 .. image:: fig/cura_1.png
    :scale: 40 %
@@ -25,9 +25,9 @@ Open ``thinwall.stl`` (located in ``FENGSim/start/AM/build/AM/conf/geo/``) and `
     cd build
     cmake ..
     make -j4
-    ./AMSolver
+    ./multix
 
-Open ``pathplanning.vtk`` (located in ``FENGSim/start/AM/build/data/am/``) using ParaView.
+Open ``pathplanning.vtk`` (located in ``FENGSim/start/AM/build/data/vtk/``) using ParaView.
 
 .. image:: fig/cura_2.png
    :scale: 40 %
