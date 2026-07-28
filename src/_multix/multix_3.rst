@@ -83,6 +83,14 @@ Mutibody
    :alt: alternate text
    :align: center
 
+--------------------------
+DNN
+--------------------------
+
+.. image:: fig/dnn.png
+   :height: 200px
+   :alt: alternate text
+   :align: center
 	   
 ==============================================================
 Multi-Phase, Multi-Component Thermo-Hydro-Mechanical Systems
