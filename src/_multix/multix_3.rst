@@ -118,7 +118,7 @@ Multi-Component
 Navier-Stokes equations
 --------------------------
 
-.. image:: fig/AkzoNobel.png
+.. image:: fig/navierstokes.png
    :height: 200px
    :alt: alternate text
    :align: center
