@@ -45,6 +45,15 @@ MPM
 Complex Assembled Structure
 =============================
 
+------------------------------
+Assembly and Modal Analysis
+------------------------------
+
+.. image:: fig/modal_mpc.gif
+   :height: 200px
+   :alt: alternate text
+   :align: center
+
 ---------------------------------------------------------
 Prestress Induced by Electrodynamic and Thermal Effects
 ---------------------------------------------------------
@@ -56,15 +65,6 @@ To run the example: ::
   paraview data/vtk/magnetostatics_nonlinear_domain.vtk
 
 .. image:: fig/static_mag.png
-   :height: 200px
-   :alt: alternate text
-   :align: center
-
-------------------------------
-Assembly and Modal Analysis
-------------------------------
-
-.. image:: fig/modal_mpc.gif
    :height: 200px
    :alt: alternate text
    :align: center
@@ -84,7 +84,7 @@ Mutibody
    :align: center
 
 --------------------------
-DNN
+Reinforcement Learning
 --------------------------
 
 .. image:: fig/dnn.png
@@ -107,6 +107,15 @@ Multi-Phase
 
 --------------------------
 Multi-Component
+--------------------------
+
+.. image:: fig/AkzoNobel.png
+   :height: 200px
+   :alt: alternate text
+   :align: center
+
+--------------------------
+Navier-Stokes equations
 --------------------------
 
 .. image:: fig/AkzoNobel.png
