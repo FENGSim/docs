@@ -18,7 +18,7 @@ ALE
 -------------------------
 
 .. image:: fig/ale.gif
-   :height: 400px
+   :width: 100%
    :alt: alternate text
    :align: center
 
@@ -27,17 +27,17 @@ MPM
 -------------------------
 
 .. image:: fig/mpm.gif
-   :height: 300px
+   :width: 100%
    :alt: alternate text
    :align: center
 
 .. image:: fig/mpm2.gif
-   :height: 300px
+   :width: 100%
    :alt: alternate text
    :align: center
 
 .. image:: fig/damage.gif
-   :height: 300px
+   :width: 100%
    :alt: alternate text
    :align: center
 
@@ -65,7 +65,7 @@ To run the example: ::
   paraview data/vtk/magnetostatics_nonlinear_domain.vtk
 
 .. image:: fig/static_mag.png
-   :height: 200px
+   :width: 100%
    :alt: alternate text
    :align: center
 
@@ -74,12 +74,12 @@ Mutibody
 --------------------------
 
 .. image:: fig/2dof.png
-   :height: 200px
+   :width: 100%
    :alt: alternate text
    :align: center
 
 .. image:: fig/cartpole.png
-   :height: 200px
+   :width: 100%
    :alt: alternate text
    :align: center
 
@@ -88,7 +88,7 @@ Reinforcement Learning
 --------------------------
 
 .. image:: fig/dnn.png
-   :height: 200px
+   :width: 100%
    :alt: alternate text
    :align: center
 	   
@@ -101,7 +101,7 @@ Multi-Phase
 --------------------------
 
 .. image:: fig/allencahn.gif
-   :height: 200px
+   :width: 100%
    :alt: alternate text
    :align: center
 
@@ -110,7 +110,7 @@ Multi-Component
 --------------------------
 
 .. image:: fig/AkzoNobel.png
-   :height: 200px
+   :width: 100%
    :alt: alternate text
    :align: center
 
@@ -119,7 +119,7 @@ Navier-Stokes equations
 --------------------------
 
 .. image:: fig/navierstokes.png
-   :height: 200px
+   :width: 100%
    :alt: alternate text
    :align: center
 	   
