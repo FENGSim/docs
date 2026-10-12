@@ -17,6 +17,16 @@ Extreme Mechanics
 ALE
 -------------------------
 
+.. image:: fig/rivert.gif
+   :width: 100%
+   :alt: alternate text
+   :align: center
+
+.. image:: fig/pipe.gif
+   :width: 100%
+   :alt: alternate text
+   :align: center
+	   
 .. image:: fig/ale.gif
    :width: 100%
    :alt: alternate text
