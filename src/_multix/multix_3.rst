@@ -60,7 +60,15 @@ Assembly and Modal Analysis
 ------------------------------
 
 .. image:: fig/modal_mpc.gif
-   :height: 200px
+   :width: 50%
+   :alt: alternate text
+   :align: center
+
+|
+|
+
+.. image:: fig/truss_tri.png
+   :width: 50%
    :alt: alternate text
    :align: center
 
@@ -75,7 +83,7 @@ To run the example: ::
   paraview data/vtk/magnetostatics_nonlinear_domain.vtk
 
 .. image:: fig/static_mag.png
-   :width: 100%
+   :width: 50%
    :alt: alternate text
    :align: center
 
@@ -84,12 +92,12 @@ Mutibody
 --------------------------
 
 .. image:: fig/2dof.png
-   :width: 100%
+   :width: 50%
    :alt: alternate text
    :align: center
-
+	   
 .. image:: fig/cartpole.png
-   :width: 100%
+   :width: 50%
    :alt: alternate text
    :align: center
 
@@ -98,6 +106,14 @@ Reinforcement Learning
 --------------------------
 
 .. image:: fig/dnn.png
+   :width: 50%
+   :alt: alternate text
+   :align: center
+
+|
+|
+
+.. image:: fig/cart_pole.gif
    :width: 100%
    :alt: alternate text
    :align: center
@@ -111,7 +127,7 @@ Multi-Phase
 --------------------------
 
 .. image:: fig/allencahn.gif
-   :width: 100%
+   :width: 50%
    :alt: alternate text
    :align: center
 
@@ -120,18 +136,22 @@ Multi-Component
 --------------------------
 
 .. image:: fig/AkzoNobel.png
-   :width: 100%
+   :width: 50%
    :alt: alternate text
    :align: center
 
---------------------------
-Navier-Stokes equations
---------------------------
+------------------------------------------
+Imcompressible Navier-Stokes equations
+------------------------------------------
 
 .. image:: fig/navierstokes.png
-   :width: 100%
+   :width: 50%
    :alt: alternate text
    :align: center
+
+------------------------------------------
+Compressible Navier-Stokes equations
+------------------------------------------
 	   
 ======================================================================================================================================================
 Multiscale Modeling of Multifunctional Material Properties
