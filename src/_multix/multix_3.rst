@@ -65,7 +65,6 @@ Assembly and Modal Analysis
    :align: center
 
 |
-|
 
 .. image:: fig/truss_tri.png
    :width: 50%
@@ -110,7 +109,6 @@ Reinforcement Learning
    :alt: alternate text
    :align: center
 
-|
 |
 
 .. image:: fig/cart_pole.gif
