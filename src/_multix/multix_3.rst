@@ -2,7 +2,7 @@
 Examples
 **********************
 
-MultiX features three couplers: one for large deformation, contact, and fracture in fluid-solid and solid-solid problems; one for multiphase, multicomponent heat-fluid-solid interactions; and one for assembly.
+MultiX features four couplers: one for large deformation, contact, and damage in fluid–solid and solid–solid problems; one for multiphase, multicomponent heat–fluid–solid interactions; one for assembly; and one for multiscale material properties.
 
 To run MultiX: ::
 
