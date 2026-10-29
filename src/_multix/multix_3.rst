@@ -100,11 +100,6 @@ Mutibody
    :alt: alternate text
    :align: center
 	   
-.. image:: fig/cartpole.png
-   :width: 50%
-   :alt: alternate text
-   :align: center
-
 --------------------------
 Reinforcement Learning
 --------------------------
@@ -114,7 +109,10 @@ Reinforcement Learning
    :alt: alternate text
    :align: center
 
-|
+.. image:: fig/cartpole.png
+   :width: 50%
+   :alt: alternate text
+   :align: center
 
 .. image:: fig/cart_pole.gif
    :width: 100%
