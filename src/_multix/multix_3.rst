@@ -37,17 +37,22 @@ MPM
 -------------------------
 
 .. image:: fig/mpm.gif
-   :width: 100%
+   :height: 400px
    :alt: alternate text
    :align: center
 
 .. image:: fig/mpm2.gif
-   :width: 100%
+   :height: 400px
    :alt: alternate text
    :align: center
 
-.. image:: fig/damage.gif
-   :width: 100%
+.. image:: fig/mpm3.gif
+   :height: 400px
+   :alt: alternate text
+   :align: center
+
+.. image:: fig/mpm4.gif
+   :height: 400px
    :alt: alternate text
    :align: center
 
