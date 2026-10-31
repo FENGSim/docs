@@ -56,6 +56,11 @@ MPM
    :alt: alternate text
    :align: center
 
+.. image:: fig/cutting.gif
+   :height: 400px
+   :alt: alternate text
+   :align: center
+
 =============================
 Complex Assembled Structure
 =============================
