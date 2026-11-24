@@ -151,7 +151,7 @@ Imcompressible Navier-Stokes equations
 ------------------------------------------
 
 .. image:: fig/navierstokes.gif
-   :width: 50%
+   :width: 100%
    :alt: alternate text
    :align: center
 
