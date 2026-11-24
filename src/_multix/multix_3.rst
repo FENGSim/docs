@@ -150,7 +150,7 @@ Multi-Component
 Imcompressible Navier-Stokes equations
 ------------------------------------------
 
-.. image:: fig/navierstokes.png
+.. image:: fig/navierstokes.gif
    :width: 50%
    :alt: alternate text
    :align: center
